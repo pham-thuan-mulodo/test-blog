@@ -50,6 +50,27 @@ class User extends \Orm\Model {
         }
         return $result;
     }
+    public function edit($user_id) {
+        $user = new User();
+        $entry = $user->find('all', array(
+            'where' => array(
+                array('id', $user_id)
+            )
+        ));
+        if(count($entry) == 0) {
+            $result['status'] = 401;
+            $result['text'] = 'Invalid Input';
+            $result['data'] = 'NULL';
+        }
+        else {
+            $result['status'] = 200;
+            $result['text'] = '';
+            foreach($entry as $item) {
+                $result['data'] = $item;
+            }
+        }
+        return $result;
+    }
 }
 
 
