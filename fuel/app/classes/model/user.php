@@ -28,6 +28,28 @@ class User extends \Orm\Model {
         }
         return $result;
     }
+    public function login($email, $pass) {
+        $user = new User();
+        $entry = $user->find('all', array(
+            'where' => array(
+                array('email', $email),
+                array('password', $pass)
+            )
+        ));
+        if(count($entry) == 1) {
+            $result['status'] = 200;
+            $result['text'] = '';
+            foreach($entry as $item) {
+                $result['data'] = $item;
+            }
+        }
+        else {
+            $result['status'] = 401;
+            $result['text'] = 'Invalid Input';
+            $result['data'] = NULL;
+        }
+        return $result;
+    }
 }
 
 

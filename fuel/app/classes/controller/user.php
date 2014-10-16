@@ -1,10 +1,12 @@
 <?php
 use Fuel\Core\View;
 use Model\User;
+use Fuel\Core\Session;
 //use Fuel\Core\Date;
 
 class Controller_User extends Controller {
     public function action_index() {
+        echo Session::get('token');
         return View::forge('user/index');
     }
     public function action_register() {
@@ -31,6 +33,38 @@ class Controller_User extends Controller {
         echo json_encode($response);
     }
     public function action_login() {
-        
+        $email = 'example@gmail.com';
+        $pass = md5('123@');
+ 
+        $user = new User();
+        $result = $user->login($email, $pass);
+        if($result['status'] == 200) {
+            $response = array(
+                'message' => array(
+                    'status' => $result['status'],
+                    'text' => $result['text']
+                ),
+                'data' => NULL
+            );
+            // create token
+            $token = hash_hmac('sha1', time(), uniqid(), false);
+            // store data into session
+            Session::set('user_id', $result['data']->id)
+                    ->set('email', $result['data']->email)
+                    ->set('username', $result['data']->username)
+                    ->set('token', $token);
+            echo Session::get('welcome');
+        }
+        else {
+            $response = array(
+                'message' => array(
+                    'status' => $result['status'],
+                    'text' => $result['text']
+                ),
+                'data' => NULL
+            );
+        }
+        echo json_encode($response);
+        //echo count($result);
     }
 }
