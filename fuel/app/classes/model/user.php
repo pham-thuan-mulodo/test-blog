@@ -2,7 +2,7 @@
 namespace Model;
 
 class User extends \Orm\Model {
-    protected static $_properties = array('id', 'email', 'password', 'username', 'created_gmt', 'modified_gmt');
+    protected static $_properties = array('id', 'email', 'password', 'username', 'last_login', 'login_hash', 'group', 'profile_fields', 'created_gmt', 'modified_gmt');
     protected static $_table_name = 'user';
     //protected static $_connection = 'trainning';
     

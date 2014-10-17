@@ -6,5 +6,13 @@
  */
 
 return array(
-
+    'default' => array(
+                //'type' => 'pdo',
+		'connection'  => array(
+			'dsn'        => 'mysql:host=localhost;dbname=trainning',
+			'username'   => 'root',
+			'password'   => '',
+		),
+                'profiling' => true
+    ),
 );
