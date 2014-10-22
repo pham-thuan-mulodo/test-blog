@@ -15,19 +15,9 @@ Thumbs.db
 desktop.ini
 
 # the composer package lock file and install directory
-/composer.lock
-/fuel/vendor
+
 
 # any of the fuel packages installed by default
 /docs/
-/fuel/core/
-/fuel/packages/auth/
-/fuel/packages/email/
-/fuel/packages/oil/
-/fuel/packages/orm/
-/fuel/packages/parser/
 
 # dynamically generated files
-/fuel/app/logs/*/*/*
-/fuel/app/cache/*/*
-/fuel/app/config/crypt.php
