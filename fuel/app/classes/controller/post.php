@@ -47,7 +47,7 @@ class Controller_Post extends Controller_Rest {
                     'modified_gmt' => 0
                 );
                 $post = new Post();
-                $result = $post->create_post($data);
+                $result = $post->createPost($data);
                 return $this->response(array(
                     'message' => array(
                         'status' => $result['status'],
@@ -67,5 +67,30 @@ class Controller_Post extends Controller_Rest {
             }
         }
     }
-
+    
+    public function delete_delete() {
+        if (Auth::check() && !empty(Session::get('token'))) {
+            $post_id = (int) Input::delete('id');
+            if (empty($post_id) || $post_id <= 0) {
+                return $this->response(array(
+                    'message' => array(
+                        'status' => 404,
+                        'text' => 'Not Found'
+                    ),
+                    'data' => NULL
+                ));
+            }
+            else {
+                $post = new Post();
+                $result = $post->deletePost($post_id);
+                return $this->response(array(
+                    'message' => array(
+                        'status' => $result['status'],
+                        'text' => $result['text']
+                    ),
+                    'data' => $result['data']
+                ));
+            }
+        }
+    }
 }

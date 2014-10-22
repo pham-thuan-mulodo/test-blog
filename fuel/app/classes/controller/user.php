@@ -124,34 +124,43 @@ class Controller_User extends Controller_Rest {
             $result = $user->register($data);
 
             return $this->response(array(
-                'message' => array(
-                    'status' => $result['status'],
-                    'text' => $result['text']
-                ),
-                'data' => $result['data']
+                        'message' => array(
+                            'status' => $result['status'],
+                            'text' => $result['text']
+                        ),
+                        'data' => $result['data']
             ));
         } else {
             return $this->response(array(
-                'message' => array(
-                    'status' => 401,
-                    'text' => 'Invalid Input'
-                ),
-                'data' => NULL
+                        'message' => array(
+                            'status' => 401,
+                            'text' => 'Invalid Input'
+                        ),
+                        'data' => NULL
             ));
         }
     }
 
     public function put_edit() {
         if (Auth::check() && !empty(Session::get('token'))) {
-            $user_id = Input::put('id');
+            $user_id = (int) Input::put('id');
+            if (empty($user_id) || $user_id <= 0) {
+                return $this->response(array(
+                    'message' => array(
+                        'status' => 404,
+                        'text' => 'Not Found'
+                    ),
+                    'data' => NULL
+                ));
+            }
             $user = new User();
             $result = $user->edit($user_id);
             $pass = $result['data']['password'];
             $time = time();
             // check edit account, then update to dabase and return data edited as json
-            if (Input::put('id') && (!empty(Input::put('email')) || !empty(Input::put('password')) || 
-            !empty(Input::put('username')) || Input::put('profile_fields')) && 
-            !is_bool(filter_var(Input::put('email'), FILTER_VALIDATE_EMAIL))) {
+            if (Input::put('id') && (!empty(Input::put('email')) || !empty(Input::put('password')) ||
+                    !empty(Input::put('username')) || Input::put('profile_fields')) &&
+                    !is_bool(filter_var(Input::put('email'), FILTER_VALIDATE_EMAIL))) {
                 $data = array(
                     'email' => (empty(Input::put('email'))) ? $result['data']['email'] : Input::put('email'),
                     'password' => (empty(Input::put('password'))) ? $pass : Auth::instance()->hash_password(Input::put('password')),
@@ -194,4 +203,5 @@ class Controller_User extends Controller_Rest {
             }
         }
     }
+
 }

@@ -13,7 +13,7 @@ class Post extends \Orm\Model {
         'modified_gmt'
     );
     
-    public function create_post($data) {
+    public function createPost($data) {
         $entry = Post::find('all', array(
            'where' => array(
                array('title', '=', $data['title']),
@@ -30,6 +30,22 @@ class Post extends \Orm\Model {
         else {
             $result['status'] = 10301;
             $result['text'] = 'Post Existed';
+            $result['data'] = NULL;
+        }
+        return $result;
+    }
+    
+    public function deletePost($id) {
+        $post = Post::find($id);
+        $result = $post->delete();
+        if(count($result) == 0) {
+            $result['status'] = 404;
+            $result['text'] = 'Not Found';
+            $result['data'] = NULL;
+        }
+        else {
+            $result['status'] = 200;
+            $result['text'] = 'Delete successfully';
             $result['data'] = NULL;
         }
         return $result;
