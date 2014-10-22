@@ -7,5 +7,10 @@ return array(
         'user' => 'user/login',
         'user_logout' => 'user/logout',
         'user_register' => 'user/register',
-        'user_edit' => 'user/edit'
+        'user_edit' => 'user/edit',
+//      Config router for post controller
+        'post' => 'post/create',
+        'post_edit' => 'post/edit',
+        'post_delete' => 'post/delete',
+        'posts' => 'post/show'
 );

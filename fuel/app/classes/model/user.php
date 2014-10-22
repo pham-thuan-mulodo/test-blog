@@ -7,7 +7,7 @@ class User extends \Orm\Model {
     //protected static $_connection = 'trainning';
     
     public function register($data) {
-        $user = new User($data);
+        $user = User::forge($data);
         // Check Existing Account
         $entry = $user->find('all', array(
             'where' => array(
@@ -51,7 +51,7 @@ class User extends \Orm\Model {
         return $result;
     }
     public function edit($user_id) {
-        $user = new User();
+        $user = User::forge();
         $entry = $user->find('all', array(
             'where' => array(
                 array('id', $user_id)
@@ -61,6 +61,7 @@ class User extends \Orm\Model {
             $result['status'] = 401;
             $result['text'] = 'Invalid Input';
             $result['data'] = 'NULL';
+            die(json_encode($result));
         }
         else {
             $result['status'] = 200;
@@ -71,6 +72,16 @@ class User extends \Orm\Model {
         }
         return $result;
     }
+    public function updateUser($user_id, $data) {
+        $entry = User::find($user_id);
+        $entry->set($data);
+        $entry->save();
+    }
+    /*public function insertToken($user_id, $token) {
+        $entry = User::find($user_id);
+        $entry->login_hash = $token;
+        $entry->save();
+    }*/
 }
 
 
