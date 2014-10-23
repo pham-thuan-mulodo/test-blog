@@ -6,7 +6,7 @@ class User extends \Orm\Model {
     protected static $_table_name = 'user';
     //protected static $_connection = 'trainning';
     
-    public function register($data) {
+    public static function register($data) {
         $user = User::forge($data);
         // Check Existing Account
         $entry = $user->find('all', array(

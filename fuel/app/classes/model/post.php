@@ -50,5 +50,25 @@ class Post extends \Orm\Model {
         }
         return $result;
     }
+    
+    public function getPost($id) {
+        $result = Post::find($id);
+        return $result;
+    }
+    
+    public function updatePost($id, $data) {
+        $entry = Post::find($id);
+        $entry->set($data);
+        $entry->save();
+    }
+    
+    public function getPostOfSpecificUser($id) {
+        $entry = Post::find('all', array(
+           'where' => array(
+               array('author_id', $id)
+           ) 
+        ));
+        return $entry;
+    }
 }
 
