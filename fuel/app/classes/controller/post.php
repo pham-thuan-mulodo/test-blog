@@ -75,7 +75,7 @@ class Controller_Post extends Controller_Rest {
                 return $this->response(array(
                     'message' => array(
                         'status' => 404,
-                        'text' => 'Not Found'
+                        'text' => 'Invalid Input'
                     ),
                     'data' => NULL
                 ));

@@ -36,17 +36,18 @@ class Post extends \Orm\Model {
     }
     
     public function deletePost($id) {
-        $post = Post::find($id);
-        $result = $post->delete();
-        if(count($result) == 0) {
-            $result['status'] = 404;
-            $result['text'] = 'Not Found';
-            $result['data'] = NULL;
-        }
-        else {
+        $entry = Post::find($id);
+        if(count($entry) != 0) {
+            $post = Post::find($id);
+            $result = $post->delete();
             $result['status'] = 200;
             $result['text'] = 'Delete successfully';
-            $result['data'] = NULL;
+            $result['data'] = NULL;   
+        }
+        else {
+            $result['status'] = 404;
+            $result['text'] = 'Not Found';
+            $result['data'] = NULL;  
         }
         return $result;
     }
