@@ -102,5 +102,53 @@ class Controller_Comment extends Controller_Rest {
             }
         }
     }
+    
+    public function get_show() {
+        if(Auth::check() && !empty(Session::get('token'))) {
+            // Check input is valid or invalid
+            $post_id = (int)Input::get('post_id');
+            if(empty($post_id) || $post_id <= 0) {
+                return $this->response(array(
+                    'message' => array(
+                        'status' => 401,
+                        'text' => 'Invalid Input'
+                    ),
+                    'data' => NULL
+                ));
+            }
+            $comment = new Comment();
+            $result = $comment->getCommentsOfSpecifiedPost($post_id);
+            if(count($result) != 0) {
+                $data = array();
+                $i = 0;
+                foreach($result as $item) {
+                    $data[$i]['id'] = $item['id'];
+                    $data[$i]['content'] = $item['content'];
+                    $data[$i]['author_id'] = $item['author_id'];
+                    $data[$i]['post_id'] = $item['post_id'];
+                    $data[$i]['created_gmt'] = gmdate('Y-m-d H:i:s', $item['created_gmt']);
+                    $data[$i]['modified_gmt'] = gmdate('Y-m-d H:i:s', $item['modified_gmt']);
+                    $i++;
+                }
+                return $this->response(array(
+                    'message' => array(
+                        'status' => 200,
+                        'text' => ''
+                    ),
+                    'data' => $data
+                ));
+            }
+            else {
+                return $this->response(array(
+                    'message' => array(
+                        'status' => 404,
+                        'text' => 'Not Found'
+                    ),
+                    'data' => NULL
+                ));
+            }
+            exit; 
+        }
+    }
 }
 

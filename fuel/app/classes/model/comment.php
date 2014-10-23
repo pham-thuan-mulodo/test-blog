@@ -56,5 +56,14 @@ class Comment extends \Orm\Model {
         }
         return $result;
     }
+    
+    public function getCommentsOfSpecifiedPost($post_id) {
+        $entry = Comment::find('all', array(
+           'where' => array(
+               array('post_id', $post_id)
+           ) 
+        ));
+        return $entry;
+    }
 }
 

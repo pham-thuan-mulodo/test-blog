@@ -297,3 +297,27 @@ ERROR - 2014-10-23 11:33:18 --> Fatal Error - Call to a member function delete()
 WARNING - 2014-10-23 11:34:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-10-23 11:34:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 ERROR - 2014-10-23 11:34:27 --> Fatal Error - Call to a member function delete() on a non-object in C:\wamp\www\test-blog\fuel\app\classes\model\comment.php on line 46
+WARNING - 2014-10-23 11:48:17 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:48:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:48:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:49:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:49:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-10-23 11:49:35 --> 1049 - SQLSTATE[HY000] [1049] Unknown database 'trainningg' in C:\wamp\www\test-blog\fuel\core\classes\database\pdo\connection.php on line 113
+WARNING - 2014-10-23 11:50:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-10-23 11:50:10 --> Fatal Error - Call to a member function delete() on a non-object in C:\wamp\www\test-blog\fuel\app\classes\model\comment.php on line 46
+WARNING - 2014-10-23 11:51:07 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-10-23 11:51:07 --> Fatal Error - Call to a member function delete() on a non-object in C:\wamp\www\test-blog\fuel\app\classes\model\comment.php on line 47
+WARNING - 2014-10-23 11:51:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:03:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:03:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:03:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:12:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:12:55 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:16:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:16:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:17:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:17:05 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:17:08 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:17:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:17:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 12:19:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
