@@ -283,3 +283,17 @@ WARNING - 2014-10-23 10:59:13 --> Fuel\Core\Fuel::init - The configured locale e
 WARNING - 2014-10-23 10:59:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-10-23 11:00:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-10-23 11:00:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:19:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:19:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:31:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-10-23 11:31:41 --> Error - Call to undefined method Model\Comment::deleteComent() in C:\wamp\www\test-blog\fuel\packages\orm\classes\model.php on line 1046
+WARNING - 2014-10-23 11:31:57 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:32:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:32:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:32:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-10-23 11:32:49 --> Error - Call to undefined method Model\Comment::deleteComent() in C:\wamp\www\test-blog\fuel\packages\orm\classes\model.php on line 1046
+WARNING - 2014-10-23 11:33:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-10-23 11:33:18 --> Fatal Error - Call to a member function delete() on a non-object in C:\wamp\www\test-blog\fuel\app\classes\model\comment.php on line 46
+WARNING - 2014-10-23 11:34:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-23 11:34:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-10-23 11:34:27 --> Fatal Error - Call to a member function delete() on a non-object in C:\wamp\www\test-blog\fuel\app\classes\model\comment.php on line 46

@@ -40,5 +40,21 @@ class Comment extends \Orm\Model {
         $post = DB::select()->from('post')->where('id', $id)->execute();
         return count($post);
     }
+    
+    public function deleteComment($id) {
+        $comment = Comment::find($id);
+        $result = $comment->delete();
+        if(empty($result)) {
+            $result['status'] = 10300;
+            $result['text'] = 'Database Exception';
+            $result['data'] = NULL;
+        }
+        else {
+            $result['status'] = 200;
+            $result['text'] = 'Delete successfully';
+            $result['data'] = NULL;
+        }
+        return $result;
+    }
 }
 

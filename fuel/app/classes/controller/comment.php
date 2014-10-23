@@ -76,5 +76,31 @@ class Controller_Comment extends Controller_Rest {
             }
         }
     }
+    
+    public function delete_remove() {
+        if(Auth::check() && !empty(Session::get('token'))) {
+            $comm_id = (int) Input::delete('id');
+            if (empty($comm_id) || $comm_id <= 0) {
+                return $this->response(array(
+                    'message' => array(
+                        'status' => 404,
+                        'text' => 'Not Found'
+                    ),
+                    'data' => NULL
+                ));
+            } 
+            else {
+                $comment = new Comment();
+                $result = $comment->deleteComment($comm_id);
+                return $this->response(array(
+                    'message' => array(
+                        'status' => $result['status'],
+                        'text' => $result['text']
+                    ),
+                    'data' => $result['data']
+                ));
+            }
+        }
+    }
 }
 

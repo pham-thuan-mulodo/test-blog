@@ -17,5 +17,5 @@ return array(
         'comment' => 'comment/add',
         'comment_edit' => 'comment/edit',
         'comments' => 'comment/show',
-        'comment_delete' => 'comment/delete'
+        'comment_delete' => 'comment/remove'
 );
