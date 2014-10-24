@@ -85,9 +85,8 @@ class Controller_User extends Controller_Rest {
             $user_id = $arr_auth[1];
             $user = new User();
             $user->deleteToken($user_id);
-            
-            Auth::logout();
             Session::destroy();
+            Auth::logout();
             return $this->response(array(
                         'message' => array(
                             'status' => 200,
