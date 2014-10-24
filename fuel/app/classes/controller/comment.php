@@ -4,7 +4,6 @@ use Fuel\Core\Controller_Rest;
 use Auth\Auth;
 use Fuel\Core\Input;
 use Fuel\Core\Security;
-use Fuel\Core\Date;
 use Model\Comment;
 
 class Controller_Comment extends Controller_Rest {
@@ -38,6 +37,7 @@ class Controller_Comment extends Controller_Rest {
             
             if ($post_id > 0 && !empty($post_id) && !empty($content)) {
                 $flag = $comment->isExistedPost($post_id);
+                // Check post existed, if post existed then add new comment
                 if($flag == 1) {
                    $data = array(
                         'content' => $content,
@@ -121,6 +121,7 @@ class Controller_Comment extends Controller_Rest {
             if(count($result) != 0) {
                 $data = array();
                 $i = 0;
+                // create data[] array
                 foreach($result as $item) {
                     $data[$i]['id'] = $item['id'];
                     $data[$i]['content'] = $item['content'];
@@ -169,7 +170,7 @@ class Controller_Comment extends Controller_Rest {
             $comment = new Comment();
             $result = $comment->getComment($comm_id);
             // Get input
-            $content = Security::strip_tags(Security::xss_clean(Input::put('content')));
+            $content = htmlspecialchars_decode(Security::strip_tags(Security::xss_clean(Input::put('content'))), ENT_QUOTES);
             $modify_time = time();
 
             if (Input::put('id') && !empty($content) && $content != $result['content']) {

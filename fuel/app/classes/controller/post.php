@@ -5,7 +5,6 @@ use Fuel\Core\Controller_Rest;
 use Auth\Auth;
 use Fuel\Core\Input;
 use Fuel\Core\Security;
-use Fuel\Core\Date;
 use Model\Post;
 
 class Controller_Post extends Controller_Rest {
@@ -188,6 +187,7 @@ class Controller_Post extends Controller_Rest {
             if(count($result) != 0) {
                 $data = array();
                 $i = 0;
+                // create data[] array
                 foreach($result as $item) {
                     $data[$i]['id'] = $item['id'];
                     $data[$i]['title'] = $item['title'];

@@ -1,12 +1,9 @@
 <?php
-
-use Fuel\Core\View;
 use Model\User;
 use Fuel\Core\Session;
 use Fuel\Core\Input;
 use Fuel\Core\Controller_Rest;
 use Fuel\Core\Security;
-use Fuel\Core\Debug;
 use Auth\Auth;
 
 //use Fuel\Core\Date;
@@ -108,6 +105,7 @@ class Controller_User extends Controller_Rest {
     }
 
     public function post_register() {
+        // Get inputs
         $email = Security::strip_tags(Security::xss_clean(Input::post('email')));
         $pass = Auth::instance()->hash_password(Input::post('password'));
         $username = Security::strip_tags(Security::xss_clean(Input::post('username')));
@@ -169,7 +167,7 @@ class Controller_User extends Controller_Rest {
             $username = Input::put('username');
             $profile = Input::put('profile_fields');
             $time = time();
-            // check edit account, then update to dabase and return data edited as json
+            // check editted account, then update to dabase and return data edited as json
             if (Input::put('id') && ((!empty($email) && !is_bool(filter_var($email, FILTER_VALIDATE_EMAIL))) || !empty($newPass) || !empty($username) || !empty($profile))) {
                 $data = array(
                     'email' => (empty($email)) ? $result['data']['email'] : $email,
