@@ -17,7 +17,7 @@ class Controller_Comment extends Controller_Rest {
         } else {
             return $this->response(array(
                 'message' => array(
-                    'code' => 10301,
+                    'status' => 10301,
                     'text' => 'Please login'
                 ),
                 'data' => NULL
@@ -49,7 +49,7 @@ class Controller_Comment extends Controller_Rest {
                     $result = $comment->addComment($data);
                     return $this->response(array(
                         'message' => array(
-                            'code' => $result['status'],
+                            'status' => $result['status'],
                             'text' => $result['text']
                         ),
                         'data' => NULL
@@ -58,7 +58,7 @@ class Controller_Comment extends Controller_Rest {
                 else {
                     return $this->response(array(
                         'message' => array(
-                            'code' => 10300,
+                            'status' => 10300,
                             'text' => 'Database Exception'
                         ),
                         'data' => NULL
@@ -68,7 +68,7 @@ class Controller_Comment extends Controller_Rest {
             else {
                 return $this->response(array(
                     'message' => array(
-                        'code' => 401,
+                        'status' => 401,
                         'text' => 'Invalid Input'
                     ),
                     'data' => NULL
@@ -83,7 +83,7 @@ class Controller_Comment extends Controller_Rest {
             if (empty($comm_id) || $comm_id <= 0) {
                 return $this->response(array(
                     'message' => array(
-                        'code' => 404,
+                        'status' => 404,
                         'text' => 'Not Found'
                     ),
                     'data' => NULL
@@ -94,7 +94,7 @@ class Controller_Comment extends Controller_Rest {
                 $result = $comment->deleteComment($comm_id);
                 return $this->response(array(
                     'message' => array(
-                        'code' => $result['status'],
+                        'status' => $result['status'],
                         'text' => $result['text']
                     ),
                     'data' => $result['data']
@@ -110,7 +110,7 @@ class Controller_Comment extends Controller_Rest {
             if(empty($post_id) || $post_id <= 0) {
                 return $this->response(array(
                     'message' => array(
-                        'code' => 401,
+                        'status' => 401,
                         'text' => 'Invalid Input'
                     ),
                     'data' => NULL
@@ -132,7 +132,7 @@ class Controller_Comment extends Controller_Rest {
                 }
                 return $this->response(array(
                     'message' => array(
-                        'code' => 200,
+                        'status' => 200,
                         'text' => ''
                     ),
                     'data' => $data
@@ -141,7 +141,7 @@ class Controller_Comment extends Controller_Rest {
             else {
                 return $this->response(array(
                     'message' => array(
-                        'code' => 404,
+                        'status' => 404,
                         'text' => 'Not Found'
                     ),
                     'data' => NULL
@@ -158,7 +158,7 @@ class Controller_Comment extends Controller_Rest {
             if (empty($comm_id) || $comm_id <= 0) {
                 return $this->response(array(
                     'message' => array(
-                        'code' => 401,
+                        'status' => 401,
                         'text' => 'Invalid Input'
                     ),
                     'data' => NULL
@@ -186,7 +186,7 @@ class Controller_Comment extends Controller_Rest {
                 $data['modified_gmt'] = gmdate('Y-m-d H:i:s', $result['modified_gmt']);
                 return $this->response(array(
                     'message' => array(
-                        'code' => 200,
+                        'status' => 200,
                         'text' => 'Updated Successfully'
                     ),
                     'data' => $data
@@ -204,7 +204,7 @@ class Controller_Comment extends Controller_Rest {
                     );
                     return $this->response(array(
                         'message' => array(
-                            'code' => 200,
+                            'status' => 200,
                             'text' => ''
                         ),
                         'data' => $data
@@ -213,7 +213,7 @@ class Controller_Comment extends Controller_Rest {
                 else {
                     return $this->response(array(
                         'message' => array(
-                            'code' => 404,
+                            'status' => 404,
                             'text' => 'Not Found'
                         ),
                         'data' => NULL

@@ -62,7 +62,7 @@ class User extends \Orm\Model {
             $result['text'] = 'Not Found';
             $arr_msg = array(
                 'message' => array(
-                    'code' => $result['status'],
+                    'status' => $result['status'],
                     'text' => $result['text'],
                 ),
                 'data' => NULL
