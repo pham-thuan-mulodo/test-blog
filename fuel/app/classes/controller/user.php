@@ -147,8 +147,8 @@ class Controller_User extends Controller_Rest {
             if (empty($user_id) || $user_id <= 0) {
                 return $this->response(array(
                     'message' => array(
-                        'status' => 404,
-                        'text' => 'Not Found'
+                        'status' => 401,
+                        'text' => 'Invalid Input'
                     ),
                     'data' => NULL
                 ));

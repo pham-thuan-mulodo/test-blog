@@ -67,5 +67,16 @@ class Comment extends \Orm\Model {
         ));
         return $entry;
     }
+    
+    public function getComment($id) {
+        $result = Comment::find($id);
+        return $result;
+    }
+    
+    public function updateComment($id, $data) {
+        $entry = Comment::find($id);
+        $entry->set($data);
+        $entry->save();
+    }
 }
 

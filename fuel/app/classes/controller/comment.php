@@ -153,7 +153,73 @@ class Controller_Comment extends Controller_Rest {
     
     public function put_edit() {
         if(Auth::check() && !empty(Session::get('token'))) {
-            
+            // Check input is valid or invalid
+            $comm_id = (int) Input::put('id');
+            if (empty($comm_id) || $comm_id <= 0) {
+                return $this->response(array(
+                    'message' => array(
+                        'status' => 401,
+                        'text' => 'Invalid Input'
+                    ),
+                    'data' => NULL
+                ));
+            }
+
+            // Get post
+            $comment = new Comment();
+            $result = $comment->getComment($comm_id);
+            // Get input
+            $content = Security::strip_tags(Security::xss_clean(Input::put('content')));
+            $modify_time = time();
+
+            if (Input::put('id') && !empty($content) && $content != $result['content']) {
+                $data = array(
+                    'id' => $result['id'],
+                    'content' => (empty($content)) ? $result['content'] : htmlspecialchars_decode($content, ENT_QUOTES),
+                    'author_id' => $result['author_id'],
+                    'post_id' => $result['post_id'],
+                    'created_gmt' => $result['created_gmt'],
+                    'modified_gmt' => $modify_time
+                );
+                $comment->updateComment($comm_id, $data);
+                $data['created_gmt'] = gmdate('Y-m-d H:i:s', $result['created_gmt']);
+                $data['modified_gmt'] = gmdate('Y-m-d H:i:s', $result['modified_gmt']);
+                return $this->response(array(
+                    'message' => array(
+                        'status' => 200,
+                        'text' => 'Updated Successfully'
+                    ),
+                    'data' => $data
+                ));
+            } 
+            else {
+                if (count($result) != 0) {
+                    $data = array(
+                        'id' => $result['id'],
+                        'content' => $result['content'],
+                        'author_id' => $result['author_id'],
+                        'post_id' => $result['post_id'],
+                        'created_gmt' => gmdate('Y-m-d H:i:s', $result['created_gmt']),
+                        'modified_gmt' => gmdate('Y-m-d H:i:s', $result['modified_gmt'])
+                    );
+                    return $this->response(array(
+                        'message' => array(
+                            'status' => 200,
+                            'text' => ''
+                        ),
+                        'data' => $data
+                    ));
+                }
+                else {
+                    return $this->response(array(
+                        'message' => array(
+                            'status' => 404,
+                            'text' => 'Not Found'
+                        ),
+                        'data' => NULL
+                    ));
+                }
+            }
         }
     }
 }
