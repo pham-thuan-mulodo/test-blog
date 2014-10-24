@@ -19,7 +19,7 @@ class Controller_Post extends Controller_Rest {
         } else {
             return $this->response(array(
                 'message' => array(
-                    'status' => 10301,
+                    'code' => 10301,
                     'text' => 'Please login'
                 ),
                 'data' => NULL
@@ -51,7 +51,7 @@ class Controller_Post extends Controller_Rest {
                 $result = $post->createPost($data);
                 return $this->response(array(
                     'message' => array(
-                        'status' => $result['status'],
+                        'code' => $result['status'],
                         'text' => $result['text']
                     ),
                     'data' => NULL
@@ -59,7 +59,7 @@ class Controller_Post extends Controller_Rest {
             } else {
                 return $this->response(array(
                     'message' => array(
-                        'status' => 401,
+                        'code' => 401,
                         'text' => 'Invalid Input'
                     ),
                     'data' => NULL
@@ -74,7 +74,7 @@ class Controller_Post extends Controller_Rest {
             if (empty($post_id) || $post_id <= 0) {
                 return $this->response(array(
                     'message' => array(
-                        'status' => 404,
+                        'code' => 404,
                         'text' => 'Invalid Input'
                     ),
                     'data' => NULL
@@ -85,7 +85,7 @@ class Controller_Post extends Controller_Rest {
                 $result = $post->deletePost($post_id);
                 return $this->response(array(
                     'message' => array(
-                        'status' => $result['status'],
+                        'code' => $result['status'],
                         'text' => $result['text']
                     ),
                     'data' => $result['data']
@@ -101,7 +101,7 @@ class Controller_Post extends Controller_Rest {
             if (empty($post_id) || $post_id <= 0) {
                 return $this->response(array(
                     'message' => array(
-                        'status' => 401,
+                        'code' => 401,
                         'text' => 'Invalid Input'
                     ),
                     'data' => NULL
@@ -132,7 +132,7 @@ class Controller_Post extends Controller_Rest {
                 $data['modified_gmt'] = gmdate('Y-m-d H:i:s', $modify_time);
                 return $this->response(array(
                     'message' => array(
-                        'status' => 200,
+                        'code' => 200,
                         'text' => 'Updated Successfully'
                     ),
                     'data' => $data
@@ -151,7 +151,7 @@ class Controller_Post extends Controller_Rest {
                     );
                     return $this->response(array(
                         'message' => array(
-                            'status' => 200,
+                            'code' => 200,
                             'text' => ''
                         ),
                         'data' => $data
@@ -160,7 +160,7 @@ class Controller_Post extends Controller_Rest {
                 else {
                     return $this->response(array(
                         'message' => array(
-                            'status' => 404,
+                            'code' => 404,
                             'text' => 'Not Found'
                         ),
                         'data' => NULL
@@ -177,7 +177,7 @@ class Controller_Post extends Controller_Rest {
             if(empty($author_id) || $author_id <= 0) {
                 return $this->response(array(
                     'message' => array(
-                        'status' => 401,
+                        'code' => 401,
                         'text' => 'Invalid Input'
                     ),
                     'data' => NULL
@@ -200,7 +200,7 @@ class Controller_Post extends Controller_Rest {
                 }
                 return $this->response(array(
                     'message' => array(
-                        'status' => 200,
+                        'code' => 200,
                         'text' => ''
                     ),
                     'data' => $data
@@ -209,7 +209,7 @@ class Controller_Post extends Controller_Rest {
             else {
                 return $this->response(array(
                     'message' => array(
-                        'status' => 404,
+                        'code' => 404,
                         'text' => 'Not Found'
                     ),
                     'data' => NULL
