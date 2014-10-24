@@ -80,6 +80,12 @@ class Controller_User extends Controller_Rest {
 
     public function post_logout() {
         if (Auth::check() && !empty(Session::get('token'))) {
+            // xoa token trong database
+            $arr_auth = Auth::instance()->get_user_id();
+            $user_id = $arr_auth[1];
+            $user = new User();
+            $user->deleteToken($user_id);
+            
             Auth::logout();
             Session::destroy();
             return $this->response(array(

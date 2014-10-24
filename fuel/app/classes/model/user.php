@@ -83,11 +83,11 @@ class User extends \Orm\Model {
         $entry->set($data);
         $entry->save();
     }
-    /*public function insertToken($user_id, $token) {
+    public function deleteToken($user_id) {
         $entry = User::find($user_id);
-        $entry->login_hash = $token;
+        $entry->login_hash = '';
         $entry->save();
-    }*/
+    }
 }
 
 
