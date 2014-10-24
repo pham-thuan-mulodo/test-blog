@@ -393,8 +393,11 @@ WARNING - 2014-10-24 10:47:14 --> Fuel\Core\Fuel::init - The configured locale e
 WARNING - 2014-10-24 10:47:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-10-24 10:47:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2014-10-24 10:47:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 3eace43... change status into code
 WARNING - 2014-10-24 10:55:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 =======
 >>>>>>> parent of 07aec38... custom logout API user
+=======
+>>>>>>> 41862a7e9a2cb4c245a7df765d358676a0fa7d89
