@@ -156,18 +156,22 @@ class Controller_User extends Controller_Rest {
             $user = new User();
             $result = $user->edit($user_id);
             $pass = $result['data']['password'];
+            //Get input
+            $email = Input::put('email');
+            $newPass = Input::put('password');
+            $username = Input::put('username');
+            $profile = Input::put('profile_fields');
             $time = time();
             // check edit account, then update to dabase and return data edited as json
-            if (Input::put('id') && (!empty(Input::put('email')) || !empty(Input::put('password')) ||
-                    !empty(Input::put('username')) || Input::put('profile_fields')) &&
-                    !is_bool(filter_var(Input::put('email'), FILTER_VALIDATE_EMAIL))) {
+            if (Input::put('id') && ((!empty($email) && !is_bool(filter_var($email, FILTER_VALIDATE_EMAIL))) || !empty($newPass) | !empty($username) || !empty($profile))) {
                 $data = array(
-                    'email' => (empty(Input::put('email'))) ? $result['data']['email'] : Input::put('email'),
-                    'password' => (empty(Input::put('password'))) ? $pass : Auth::instance()->hash_password(Input::put('password')),
-                    'username' => (empty(Input::put('username'))) ? $result['data']['username'] : Input::put('username'),
+                    'id' => $result['data']['id'],
+                    'email' => (empty($email)) ? $result['data']['email'] : $email,
+                    'password' => (empty($newPass)) ? $pass : Auth::instance()->hash_password($newPass),
+                    'username' => (empty($username)) ? $result['data']['username'] : $username,
                     'last_login' => $result['data']['last_login'],
                     'group' => $result['data']['group'],
-                    'profile_fields' => (empty(Input::put('profile_fields'))) ? $result['data']['profile_fields'] : Input::put('profile_fields'),
+                    'profile_fields' => (empty($profile)) ? $result['data']['profile_fields'] : $profile,
                     'created_gmt' => $result['data']['created_gmt'],
                     'modified_gmt' => $time,
                 );

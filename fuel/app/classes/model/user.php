@@ -60,8 +60,14 @@ class User extends \Orm\Model {
         if(count($entry) == 0) {
             $result['status'] = 404;
             $result['text'] = 'Not Found';
-            $result['data'] = 'NULL';
-            die(json_encode($result));
+            $arr_msg = array(
+                'message' => array(
+                    'status' => $result['status'],
+                    'text' => $result['text'],
+                ),
+                'data' => NULL
+            );
+            die(json_encode($arr_msg));
         }
         else {
             $result['status'] = 200;
