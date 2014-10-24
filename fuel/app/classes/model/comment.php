@@ -42,16 +42,18 @@ class Comment extends \Orm\Model {
     }
     
     public function deleteComment($id) {
-        $comment = Comment::find($id);
-        $result = $comment->delete();
-        if(empty($result)) {
-            $result['status'] = 10300;
-            $result['text'] = 'Database Exception';
+        // Check comment is exist or not exist
+        $entry = Comment::find($id);
+        if(count($entry) != 0) {
+            $comment = Comment::find($id);
+            $result = $comment->delete();
+            $result['status'] = 200;
+            $result['text'] = 'Delete successfully';
             $result['data'] = NULL;
         }
         else {
-            $result['status'] = 200;
-            $result['text'] = 'Delete successfully';
+            $result['status'] = 404;
+            $result['text'] = 'Not Found';
             $result['data'] = NULL;
         }
         return $result;

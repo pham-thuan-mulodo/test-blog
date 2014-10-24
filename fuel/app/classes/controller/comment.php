@@ -150,5 +150,11 @@ class Controller_Comment extends Controller_Rest {
             exit; 
         }
     }
+    
+    public function put_edit() {
+        if(Auth::check() && !empty(Session::get('token'))) {
+            
+        }
+    }
 }
 
