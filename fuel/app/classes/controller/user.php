@@ -22,7 +22,7 @@ class Controller_User extends Controller_Rest {
         } else {
             return $this->response(array(
                         'message' => array(
-                            'status' => 10301,
+                            'code' => 10301,
                             'text' => 'Please login'
                         ),
                         'data' => NULL
@@ -50,7 +50,7 @@ class Controller_User extends Controller_Rest {
 
                     return $this->response(array(
                                 'message' => array(
-                                    'status' => 200,
+                                    'code' => 200,
                                     'text' => ''
                                 ),
                                 'token' => $token,
@@ -59,7 +59,7 @@ class Controller_User extends Controller_Rest {
                 } else {
                     return $this->response(array(
                                 'message' => array(
-                                    'status' => 401,
+                                    'code' => 401,
                                     'text' => 'Invalid Input'
                                 ),
                                 'data' => NULL
@@ -69,7 +69,7 @@ class Controller_User extends Controller_Rest {
         } else {
             return $this->response(array(
                         'message' => array(
-                            'status' => 200,
+                            'code' => 200,
                             'text' => ''
                         ),
                         'token' => Session::get('token'),
@@ -89,7 +89,7 @@ class Controller_User extends Controller_Rest {
             Auth::logout();
             return $this->response(array(
                         'message' => array(
-                            'status' => 200,
+                            'code' => 200,
                             'text' => ''
                         ),
                         'data' => NULL
@@ -97,7 +97,7 @@ class Controller_User extends Controller_Rest {
         } else {
             return $this->response(array(
                         'message' => array(
-                            'status' => 10301,
+                            'code' => 10301,
                             'text' => 'Please login'
                         ),
                         'data' => NULL
@@ -130,7 +130,7 @@ class Controller_User extends Controller_Rest {
 
             return $this->response(array(
                         'message' => array(
-                            'status' => $result['status'],
+                            'code' => $result['status'],
                             'text' => $result['text']
                         ),
                         'data' => $result['data']
@@ -138,7 +138,7 @@ class Controller_User extends Controller_Rest {
         } else {
             return $this->response(array(
                         'message' => array(
-                            'status' => 401,
+                            'code' => 401,
                             'text' => 'Invalid Input'
                         ),
                         'data' => NULL
@@ -152,7 +152,7 @@ class Controller_User extends Controller_Rest {
             if (empty($user_id) || $user_id <= 0) {
                 return $this->response(array(
                     'message' => array(
-                        'status' => 401,
+                        'code' => 401,
                         'text' => 'Invalid Input'
                     ),
                     'data' => NULL
@@ -186,7 +186,7 @@ class Controller_User extends Controller_Rest {
                 $data['modified_gmt'] = gmdate('Y-m-d H:i:s', $result['data']['modified_gmt']);
                 return $this->response(array(
                             'message' => array(
-                                'status' => $result['status'],
+                                'code' => $result['status'],
                                 'text' => $result['text']
                             ),
                             'data' => $data
@@ -194,7 +194,7 @@ class Controller_User extends Controller_Rest {
             } else {
                 return $this->response(array(
                             'message' => array(
-                                'status' => $result['status'],
+                                'code' => $result['status'],
                                 'text' => $result['text']
                             ),
                             'data' => array(
