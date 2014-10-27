@@ -8,23 +8,26 @@ use Fuel\Core\Security;
 use Auth\Auth;
 
 //use Fuel\Core\Date;
-
+/**
+ * Controller_User
+ * 
+ * @package Fuel\Core\Controller_Rest
+ * @var Controller_User Class contains methods to resolve transactions of user
+ */
 class Controller_User extends Controller_Rest 
 {
-    /**
-     *
-     * @var Controller_User Class contains methods to resolve transactions of user
-     */
+    
 
     /**
      *
-     * @var string set type of data of API Response Data
+     * @var string Set type of data of API Response Data
      */
     protected $format   = 'json';
 
     /**
+     * Check user logged in or not
      * 
-     * @return type
+     * @return mixed[] Content of API response
      */
     public function before() 
     {
@@ -44,7 +47,13 @@ class Controller_User extends Controller_Rest
             ));
         }
     }
-
+    
+    /**
+     * Do login action for user 
+     *
+     * @link http://localhost/test-blog/user Link to post_login method
+     * @return mixed[] Content of API response
+     */
     public function post_login() 
     {
         // Check user login or not login
@@ -91,7 +100,13 @@ class Controller_User extends Controller_Rest
             }
         }
     }
-
+    
+    /**
+     * Do logout action for user
+     * 
+     * @link http://localhost/test-blog/user_logout Link to post_logout method
+     * @return mixed[] Content of API response
+     */
     public function post_logout() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 
@@ -123,7 +138,13 @@ class Controller_User extends Controller_Rest
             ));
         }
     }
-
+    
+    /**
+     * Do register action for user
+     * 
+     * @link http://localhost/test-blog/user_register Link to post_register method
+     * @return mixed[] Content of API Response
+     */
     public function post_register() 
     {
         // Get inputs
@@ -169,7 +190,13 @@ class Controller_User extends Controller_Rest
             ));
         }
     }
-
+    
+    /**
+     * Do edit action for user
+     * 
+     * @link http://localhost/test-blog/user_edit Link to put_edit method
+     * @return mixed[] Content of API response
+     */
     public function put_edit() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 

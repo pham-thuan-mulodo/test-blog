@@ -7,11 +7,25 @@ use Fuel\Core\Input;
 use Fuel\Core\Security;
 use Model\Post;
 
+/**
+ * Controller_Post
+ * 
+ * @package Fuel\Core\Controller_Rest
+ * @var Controller_Post Class contains methods to resolve transactions of post
+ */
 class Controller_Post extends Controller_Rest 
 {
-
+    /**
+     *
+     * @var string Set type of data of API Response Data
+     */
     protected $format   = 'json';
-
+    
+    /**
+     * Check user logged in or not
+     *
+     * @return mixed[] Content of API response
+     */
     public function before() 
     {
         parent::before();
@@ -30,7 +44,13 @@ class Controller_Post extends Controller_Rest
             ));
         }
     }
-
+    
+    /**
+     * Do create action when user create a post
+     * 
+     * @link http://localhost/test-blog/post Link to post_create method
+     * @return mixed[] Content of API response
+     */
     public function post_create() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 
@@ -76,7 +96,13 @@ class Controller_Post extends Controller_Rest
             }
         }
     }
-
+    
+    /**
+     * Do delete action when user delete a post
+     * 
+     * @license http://localhost/test-blog/post_delete Link to delete_delete method
+     * @return mixed[] Content of API response
+     */
     public function delete_delete() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 
@@ -106,7 +132,13 @@ class Controller_Post extends Controller_Rest
             }
         }
     }
-
+    
+    /**
+     * Do edit action when user edit a post
+     * 
+     * @link http://localhost/test-blog/post_edit Link to put_edit method
+     * @return mixed[] Content of API response
+     */
     public function put_edit() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 
@@ -191,7 +223,13 @@ class Controller_Post extends Controller_Rest
             }
         }
     }
-
+    
+    /**
+     * Show posts of a specific user
+     * 
+     * @link http://localhost/test-blog/posts Link to get_show method
+     * @return mixed[] Content of API response
+     */
     public function get_show() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 

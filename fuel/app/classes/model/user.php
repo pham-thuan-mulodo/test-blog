@@ -2,14 +2,32 @@
 
 namespace Model;
 
+/**
+ * User
+ * 
+ * @package \Orm\Model
+ * @var User Class contain some method do some transaction with user table
+ */
 class User extends \Orm\Model 
 {
-
+   /**
+    *
+    * @var array array of columns in table connected
+    */
     protected static $_properties   = array('id', 'email', 'password', 'username', 'last_login', 'login_hash', 'group', 'profile_fields', 'created_gmt', 'modified_gmt');
+    
+    /**
+     *
+     * @var string Name of table connected
+     */
     protected static $_table_name   = 'user';
-
-    //protected static $_connection = 'trainning';
-
+    
+    /**
+     * Insert data of user to user table
+     * 
+     * @param mixed[] $data Array of information of user inputted
+     * @return mixed[] Body of message which API response will return
+     */
     public static function register($data) 
     {
         $user   = User::forge($data);
@@ -58,6 +76,12 @@ class User extends \Orm\Model
         return $result;
     }*/
 
+    /**
+     * Get detail information of a specific user in user table
+     * 
+     * @param int $user_id ID of user
+     * @return mixed[] Body of message which API response will return
+     */
     public function edit($user_id) 
     {
         $user   = User::forge();
@@ -90,14 +114,25 @@ class User extends \Orm\Model
         }
         return $result;
     }
-
+    
+    /**
+     * Update data in user table
+     * 
+     * @param int $user_id ID of user
+     * @param mixed[] $data Contain content of fiels user edited
+     */
     public function update_user($user_id, $data) 
     {
         $entry  = User::find($user_id);
         $entry->set($data);
         $entry->save();
     }
-
+    
+    /**
+     * Delete token stored in user table when user log out
+     * 
+     * @param int $user_id ID of user logout
+     */
     public function delete_token($user_id) 
     {
         $entry              = User::find($user_id);
