@@ -2,9 +2,10 @@
 namespace Model;
 use Fuel\Core\DB;
 
-class Comment extends \Orm\Model {
-    protected static $_table_name = 'comment';
-    protected static $_properties = array(
+class Comment extends \Orm\Model 
+{
+    protected static $_table_name   = 'comment';
+    protected static $_properties   = array(
         'id',
         'content',
         'author_id',
@@ -13,54 +14,62 @@ class Comment extends \Orm\Model {
         'modified_gmt'
     );
     
-    public function addComment($data) {
-        $entry = Comment::find('all', array(
+    public function add_comment($data) 
+    {
+        $entry      = Comment::find('all', array(
            'where' => array(
                array('content', '=', $data['content']),
                array('author_id', '=', $data['author_id']),
                array('post_id', '=', $data['post_id'])
            )
         ));
-        $comment = Comment::forge($data);
-        if(count($entry) == 0) {
+        $comment    = Comment::forge($data);
+        if(count($entry) == 0) 
+        {
             $comment->save();
             $result['status'] = 200;
             $result['text'] = '';
-            $result['data'] = NULL;
+            $result['data'] = null;
         }
-        else {
+        else 
+        {
             $result['status'] = 10401;
             $result['text'] = 'Comment Existed';
-            $result['data'] = NULL;
+            $result['data'] = null;
         }
         return $result;
     }
     
-    public function isExistedPost($id) {
-        $post = DB::select()->from('post')->where('id', $id)->execute();
+    public function is_existed_post($id) 
+    {
+        $post   = DB::select()->from('post')->where('id', $id)->execute();
         return count($post);
     }
     
-    public function deleteComment($id) {
+    public function delete_comment($id) 
+    {
         // Check comment is exist or not exist
-        $entry = Comment::find($id);
-        if(count($entry) != 0) {
+        $entry  = Comment::find($id);
+        if(count($entry) != 0) 
+        {
             $comment = Comment::find($id);
-            $result = $comment->delete();
-            $result['status'] = 200;
-            $result['text'] = 'Delete successfully';
-            $result['data'] = NULL;
+            $result  = $comment->delete();
+            $result['status']   = 200;
+            $result['text']     = 'Delete successfully';
+            $result['data']     = null;
         }
-        else {
-            $result['status'] = 404;
-            $result['text'] = 'Not Found';
-            $result['data'] = NULL;
+        else 
+        {
+            $result['status']   = 404;
+            $result['text']     = 'Not Found';
+            $result['data']     = null;
         }
         return $result;
     }
     
-    public function getCommentsOfSpecifiedPost($post_id) {
-        $entry = Comment::find('all', array(
+    public function get_comments_of_specified_post($post_id) 
+    {
+        $entry  = Comment::find('all', array(
            'where' => array(
                array('post_id', $post_id)
            ) 
@@ -68,13 +77,15 @@ class Comment extends \Orm\Model {
         return $entry;
     }
     
-    public function getComment($id) {
+    public function get_comment($id) 
+    {
         $result = Comment::find($id);
         return $result;
     }
     
-    public function updateComment($id, $data) {
-        $entry = Comment::find($id);
+    public function update_comment($id, $data) 
+    {
+        $entry  = Comment::find($id);
         $entry->set($data);
         $entry->save();
     }
