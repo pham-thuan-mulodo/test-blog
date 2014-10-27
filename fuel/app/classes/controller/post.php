@@ -225,7 +225,7 @@ class Controller_Post extends Controller_Rest
     }
     
     /**
-     * Show posts of a specific user
+     * Show posts of a specified user
      * 
      * @link http://localhost/test-blog/posts Link to get_show method
      * @return mixed[] Content of API response

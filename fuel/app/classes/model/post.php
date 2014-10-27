@@ -114,7 +114,7 @@ class Post extends \Orm\Model
      * Get list posts of a specific user
      * 
      * @param int $id ID of user
-     * @return mixed[] Array posts of a specific user
+     * @return mixed[] Array posts of a specified user
      */
     public function get_post_of_specific_user($id) 
     {

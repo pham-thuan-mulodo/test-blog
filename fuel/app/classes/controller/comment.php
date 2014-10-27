@@ -7,11 +7,25 @@ use Fuel\Core\Input;
 use Fuel\Core\Security;
 use Model\Comment;
 
+/**
+ * Controller_Comment
+ * 
+ * @package Fuel\Core\Controller_Rest
+ * @var Controller_Comment Class contains methods to resolve transactions of comment
+ */
 class Controller_Comment extends Controller_Rest 
 {
-
+    /**
+     *
+     * @var string Set type of data of API Response Data
+     */
     protected $format = 'json';
-
+    
+    /**
+     * Check user logged in or not
+     *
+     * @return mixed[] Content of API response
+     */
     public function before() 
     {
         parent::before();
@@ -30,7 +44,13 @@ class Controller_Comment extends Controller_Rest
             ));
         }
     }
-
+    
+    /**
+     * Do add action when user add a comment
+     * 
+     * @link http://localhost/test-blog/comment Link to post_add method
+     * @return mixed[] Content of API response
+     */
     public function post_add() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 
@@ -89,7 +109,13 @@ class Controller_Comment extends Controller_Rest
             }
         }
     }
-
+    
+    /**
+     * Do remove action when user delete a comment
+     * 
+     * @link http://localhost/test-blog/comment Link to delete_remove method
+     * @return mixed[] Content of API response
+     */
     public function delete_remove() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 
@@ -119,7 +145,13 @@ class Controller_Comment extends Controller_Rest
             }
         }
     }
-
+    
+    /**
+     * Show comments of a specified post
+     * 
+     * @link http://localhost/test-blog/comments Link to get_show method
+     * @return mixed[] Content of API response
+     */
     public function get_show() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 
@@ -173,7 +205,13 @@ class Controller_Comment extends Controller_Rest
             }
         }
     }
-
+    
+    /**
+     * Do edit action when user edit a comment
+     * 
+     * @link http://localhost/test-blog/comment_edit Link to put_edit method
+     * @return mixed[] Content of API response
+     */
     public function put_edit() 
     {
         if (Auth::check() && !empty(Session::get('token'))) 
