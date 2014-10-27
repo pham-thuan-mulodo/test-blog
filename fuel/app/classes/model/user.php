@@ -18,7 +18,7 @@ class User extends \Orm\Model {
         if(count($entry) == 0) {
             $user->save();
             $result['status'] = 200;
-            $result['text'] = '';
+            $result['text'] = 'Register Successfully';
             $result['data'] = NULL;
         }
         else {

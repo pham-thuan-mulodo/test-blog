@@ -89,7 +89,7 @@ class Controller_User extends Controller_Rest {
             return $this->response(array(
                         'message' => array(
                             'code' => 200,
-                            'text' => ''
+                            'text' => 'Logout Successfully'
                         ),
                         'data' => NULL
             ));
