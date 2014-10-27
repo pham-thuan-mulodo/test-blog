@@ -163,7 +163,7 @@ class Controller_User extends Controller_Rest {
             $pass = $result['data']['password'];
             // Get inputs
             $email = Input::put('email');
-            $newPass = Input::put('pass');
+            $newPass = Input::put('password');
             $username = Input::put('username');
             $profile = Input::put('profile_fields');
             $time = time();

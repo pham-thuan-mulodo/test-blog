@@ -115,8 +115,10 @@ class Controller_Post extends Controller_Rest {
             $outline = Security::strip_tags(Security::xss_clean(Input::put('outline')));
             $content = Security::strip_tags(Security::xss_clean(Input::put('content')));
             $modify_time = time();
-
-            if (Input::put('id') && (!empty($title) || !empty($outline) || !empty($content))) {
+            
+            // Check edited post, if post isn't edited, update post to db, then update modified time
+            // if title, outline and content of post inputted is same with db, it won't be updated
+            if (Input::put('id') && ((!empty($title) && $title != $result['title']) || (!empty($outline) && $outline != $result['outline']) || (!empty($content) && $content != $result['content']))) {
                 $data = array(
                     'id' => $result['id'],
                     'title' => (empty($title)) ? $result['title'] : $title,
@@ -131,7 +133,7 @@ class Controller_Post extends Controller_Rest {
                 $data['modified_gmt'] = gmdate('Y-m-d H:i:s', $modify_time);
                 return $this->response(array(
                     'message' => array(
-                        'code' => 200,
+                        'code' => 10302,
                         'text' => 'Updated Successfully'
                     ),
                     'data' => $data

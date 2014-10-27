@@ -187,7 +187,7 @@ class Controller_Comment extends Controller_Rest {
                 $data['modified_gmt'] = gmdate('Y-m-d H:i:s', $result['modified_gmt']);
                 return $this->response(array(
                     'message' => array(
-                        'code' => 200,
+                        'code' => 10302,
                         'text' => 'Updated Successfully'
                     ),
                     'data' => $data

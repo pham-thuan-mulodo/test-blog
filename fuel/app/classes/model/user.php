@@ -70,8 +70,8 @@ class User extends \Orm\Model {
             die(json_encode($arr_msg));
         }
         else {
-            $result['status'] = 200;
-            $result['text'] = '';
+            $result['status'] = 10302;
+            $result['text'] = 'Updated Successfully';
             foreach($entry as $item) {
                 $result['data'] = $item;
             }
