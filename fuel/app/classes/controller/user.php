@@ -7,7 +7,6 @@ use Fuel\Core\Controller_Rest;
 use Fuel\Core\Security;
 use Auth\Auth;
 
-//use Fuel\Core\Date;
 /**
  * Controller_User
  * 
