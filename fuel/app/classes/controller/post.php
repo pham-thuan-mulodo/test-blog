@@ -159,7 +159,7 @@ class Controller_Post extends Controller_Rest
 
             // Get post
             $post        = new Post();
-            $result      = $post->get_post($post_id);
+            $post_info      = $post->get_post_info($post_id);
             // Get input
             $title       = Security::strip_tags(Security::xss_clean(Input::put('title')));
             $outline     = Security::strip_tags(Security::xss_clean(Input::put('outline')));
@@ -168,19 +168,19 @@ class Controller_Post extends Controller_Rest
 
             // Check edited post, if post isn't edited, update post to db, then update modified time
             // if title, outline and content of post inputted is same with db, it won't be updated
-            if (Input::put('id') && ((!empty($title) && $title != $result['title']) || (!empty($outline) && $outline != $result['outline']) || (!empty($content) && $content != $result['content']))) 
+            if (Input::put('id') && ((!empty($title) && $title != $post_info['title']) || (!empty($outline) && $outline != $post_info['outline']) || (!empty($content) && $content != $post_info['content']))) 
             {
                 $data   = array(
-                    'id' => $result['id'],
-                    'title' => (empty($title)) ? $result['title'] : htmlspecialchars_decode($title, ENT_QUOTES),
-                    'outline' => (empty($outline)) ? $result['outline'] : htmlspecialchars_decode($outline, ENT_QUOTES),
-                    'content' => (empty($content)) ? $result['content'] : htmlspecialchars_decode($content, ENT_QUOTES),
-                    'author_id' => $result['author_id'],
-                    'created_gmt' => $result['created_gmt'],
+                    'id' => $post_info['id'],
+                    'title' => (empty($title)) ? $post_info['title'] : htmlspecialchars_decode($title, ENT_QUOTES),
+                    'outline' => (empty($outline)) ? $post_info['outline'] : htmlspecialchars_decode($outline, ENT_QUOTES),
+                    'content' => (empty($content)) ? $post_info['content'] : htmlspecialchars_decode($content, ENT_QUOTES),
+                    'author_id' => $post_info['author_id'],
+                    'created_gmt' => $post_info['created_gmt'],
                     'modified_gmt' => $modify_time
                 );
                 $post->update_post($post_id, $data);
-                $data['created_gmt']    = gmdate('Y-m-d H:i:s', $result['created_gmt']);
+                $data['created_gmt']    = gmdate('Y-m-d H:i:s', $post_info['created_gmt']);
                 $data['modified_gmt']   = gmdate('Y-m-d H:i:s', $modify_time);
                 return $this->response(array(
                     'message' => array(
@@ -192,16 +192,16 @@ class Controller_Post extends Controller_Rest
             } 
             else 
             {
-                if (count($result) != 0) 
+                if (count($post_info) != 0) 
                 {
                     $data   = array(
-                        'id' => $result['id'],
-                        'title' => $result['title'],
-                        'outline' => $result['outline'],
-                        'content' => $result['content'],
-                        'author_id' => $result['author_id'],
-                        'created_gmt' => gmdate('Y-m-d H:i:s', $result['created_gmt']),
-                        'modified_gmt' => gmdate('Y-m-d H:i:s', $result['modified_gmt'])
+                        'id' => $post_info['id'],
+                        'title' => $post_info['title'],
+                        'outline' => $post_info['outline'],
+                        'content' => $post_info['content'],
+                        'author_id' => $post_info['author_id'],
+                        'created_gmt' => gmdate('Y-m-d H:i:s', $post_info['created_gmt']),
+                        'modified_gmt' => gmdate('Y-m-d H:i:s', $post_info['modified_gmt'])
                     );
                     return $this->response(array(
                         'message' => array(

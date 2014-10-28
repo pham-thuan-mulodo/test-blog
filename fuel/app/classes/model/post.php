@@ -91,7 +91,7 @@ class Post extends \Orm\Model
      * @param int $id ID of post
      * @return mixed[] Array information of a specific post
      */
-    public function get_post($id) 
+    public function get_post_info($id) 
     {
         $result = Post::find($id);
         return $result;
