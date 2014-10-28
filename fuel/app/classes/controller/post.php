@@ -172,9 +172,9 @@ class Controller_Post extends Controller_Rest
             {
                 $data   = array(
                     'id' => $result['id'],
-                    'title' => (empty($title)) ? $result['title'] : $title,
-                    'outline' => (empty($outline)) ? $result['outline'] : $outline,
-                    'content' => (empty($content)) ? $result['content'] : e($content),
+                    'title' => (empty($title)) ? $result['title'] : htmlspecialchars_decode($title, ENT_QUOTES),
+                    'outline' => (empty($outline)) ? $result['outline'] : htmlspecialchars_decode($outline, ENT_QUOTES),
+                    'content' => (empty($content)) ? $result['content'] : htmlspecialchars_decode($content, ENT_QUOTES),
                     'author_id' => $result['author_id'],
                     'created_gmt' => $result['created_gmt'],
                     'modified_gmt' => $modify_time
