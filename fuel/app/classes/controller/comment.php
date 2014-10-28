@@ -126,8 +126,8 @@ class Controller_Comment extends Controller_Rest
             {
                 return $this->response(array(
                     'message' => array(
-                        'code' => 404,
-                        'text' => 'Not Found'
+                        'code' => 401,
+                        'text' => 'Invalid Input'
                     ),
                     'data' => null
                 ));
