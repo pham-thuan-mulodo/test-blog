@@ -113,14 +113,14 @@ class Post extends \Orm\Model
     /**
      * Get list posts of a specific user
      * 
-     * @param int $id ID of user
+     * @param int $user_id ID of user
      * @return mixed[] Array posts of a specified user
      */
-    public function get_post_of_specific_user($id) 
+    public function get_user_posts($user_id) 
     {
         $entry  = Post::find('all', array(
            'where' => array(
-               array('author_id', $id)
+               array('author_id', $user_id)
            ) 
         ));
         return $entry;

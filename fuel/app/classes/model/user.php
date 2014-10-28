@@ -60,7 +60,7 @@ class User extends \Orm\Model
      * @param int $user_id ID of user
      * @return mixed[] Body of message which API response will return
      */
-    public function edit($user_id) 
+    public function get_user_info($user_id) 
     {
         $user   = User::forge();
         $entry  = $user->find('all', array(
@@ -83,8 +83,8 @@ class User extends \Orm\Model
         } 
         else 
         {
-            $result['status']   = 10302;
-            $result['text']     = 'Updated Successfully';
+            $result['status']   = 200;
+            $result['text']     = '';
             foreach ($entry as $item) 
             {
                 $result['data'] = $item;

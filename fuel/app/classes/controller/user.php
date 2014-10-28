@@ -8,21 +8,20 @@ use Fuel\Core\Security;
 use Auth\Auth;
 
 /**
- * Controller_User
+ * Controller_User Controller class for user endpoint. This class contains all API methods related user.
+ * About routing config. See routing.php 
  * 
  * @package Fuel\Core\Controller_Rest
  * @var Controller_User Class contains methods to resolve transactions of user
  */
 class Controller_User extends Controller_Rest 
 {
-    
-
     /**
      *
      * @var string Set type of data of API Response Data
      */
     protected $format   = 'json';
-
+   
     /**
      * Check user logged in or not
      * 
@@ -212,8 +211,8 @@ class Controller_User extends Controller_Rest
                 ));
             }
             $user       = new User();
-            $result     = $user->edit($user_id);
-            $pass       = $result['data']['password'];
+            $user_info  = $user->get_user_info($user_id);
+            $pass       = $user_info['data']['password'];
             // Get inputs
             $email      = Input::put('email');
             $newPass    = Input::put('password');
@@ -224,23 +223,23 @@ class Controller_User extends Controller_Rest
             if (Input::put('id') && ((!empty($email) && !is_bool(filter_var($email, FILTER_VALIDATE_EMAIL))) || !empty($newPass) || !empty($username) || !empty($profile))) 
             {
                 $data   = array(
-                    'email' => (empty($email)) ? $result['data']['email'] : $email,
+                    'email' => (empty($email)) ? $user_info['data']['email'] : $email,
                     'password' => (empty($newPass)) ? $pass : Auth::instance()->hash_password($newPass),
-                    'username' => (empty($username)) ? $result['data']['username'] : $username,
-                    'last_login' => $result['data']['last_login'],
-                    'group' => $result['data']['group'],
-                    'profile_fields' => (empty($profile)) ? $result['data']['profile_fields'] : $profile,
-                    'created_gmt' => $result['data']['created_gmt'],
+                    'username' => (empty($username)) ? $user_info['data']['username'] : $username,
+                    'last_login' => $user_info['data']['last_login'],
+                    'group' => $user_info['data']['group'],
+                    'profile_fields' => (empty($profile)) ? $user_info['data']['profile_fields'] : $profile,
+                    'created_gmt' => $user_info['data']['created_gmt'],
                     'modified_gmt' => $time,
                 );
                 $user->update_user($user_id, $data);
-                $data['last_login']     = gmdate('Y-m-d H:i:s', $result['data']['last_login']);
-                $data['created_gmt']    = gmdate('Y-m-d H:i:s', $result['data']['created_gmt']);
-                $data['modified_gmt']   = gmdate('Y-m-d H:i:s', $result['data']['modified_gmt']);
+                $data['last_login']     = gmdate('Y-m-d H:i:s', $user_info['data']['last_login']);
+                $data['created_gmt']    = gmdate('Y-m-d H:i:s', $user_info['data']['created_gmt']);
+                $data['modified_gmt']   = gmdate('Y-m-d H:i:s', $user_info['data']['modified_gmt']);
                 return $this->response(array(
                     'message' => array(
-                        'code' => $result['status'],
-                        'text' => $result['text']
+                        'code' => 10302,
+                        'text' => 'Updated Successfully'
                     ),
                     'data' => $data
                 ));
@@ -249,19 +248,19 @@ class Controller_User extends Controller_Rest
             {
                 return $this->response(array(
                     'message' => array(
-                        'code' => $result['status'],
-                        'text' => $result['text']
+                        'code' => $user_info['status'],
+                        'text' => $user_info['text']
                     ),
                     'data' => array(
-                        'id' => $result['data']['id'],
-                        'email' => $result['data']['email'],
+                        'id' => $user_info['data']['id'],
+                        'email' => $user_info['data']['email'],
                         'password' => $pass,
-                        'username' => $result['data']['username'],
-                        'last_login' => gmdate('Y-m-d H:i:s', $result['data']['last_login']),
-                        'group' => $result['data']['group'],
-                        'profile_fields' => $result['data']['profile_fields'],
-                        'created_gmt' => gmdate('Y-m-d H:i:s', $result['data']['created_gmt']),
-                        'modified_gmt' => gmdate('Y-m-d H:i:s', $result['data']['modified_gmt']),
+                        'username' => $user_info['data']['username'],
+                        'last_login' => gmdate('Y-m-d H:i:s', $user_info['data']['last_login']),
+                        'group' => $user_info['data']['group'],
+                        'profile_fields' => $user_info['data']['profile_fields'],
+                        'created_gmt' => gmdate('Y-m-d H:i:s', $user_info['data']['created_gmt']),
+                        'modified_gmt' => gmdate('Y-m-d H:i:s', $user_info['data']['modified_gmt']),
                     )
                 ));
             }

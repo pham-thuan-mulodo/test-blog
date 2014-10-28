@@ -106,7 +106,7 @@ class Comment extends \Orm\Model
      * @param int $post_id ID of post
      * @return mixed[] Detail information of comments for a specified post
      */
-    public function get_comments_of_specified_post($post_id) 
+    public function get_comments_post($post_id) 
     {
         $entry  = Comment::find('all', array(
            'where' => array(

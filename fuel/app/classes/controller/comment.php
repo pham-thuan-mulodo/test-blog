@@ -8,7 +8,8 @@ use Fuel\Core\Security;
 use Model\Comment;
 
 /**
- * Controller_Comment
+ * Controller_Comment Controller class for comment endpoint. This class contains all API methods related comment.
+ * About routing config. See routing.php 
  * 
  * @package Fuel\Core\Controller_Rest
  * @var Controller_Comment Class contains methods to resolve transactions of comment
@@ -169,7 +170,7 @@ class Controller_Comment extends Controller_Rest
                 ));
             }
             $comment    = new Comment();
-            $result     = $comment->get_comments_of_specified_post($post_id);
+            $result     = $comment->get_comments_post($post_id);
             if (count($result) != 0) 
             {
                 $data   = array();

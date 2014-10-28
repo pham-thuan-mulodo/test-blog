@@ -8,7 +8,8 @@ use Fuel\Core\Security;
 use Model\Post;
 
 /**
- * Controller_Post
+ * Controller_Post Controller class for post endpoint. This class contains all API methods related post.
+ * About routing config. See routing.php 
  * 
  * @package Fuel\Core\Controller_Rest
  * @var Controller_Post Class contains methods to resolve transactions of post
@@ -247,7 +248,7 @@ class Controller_Post extends Controller_Rest
                 ));
             }
             $post   = new Post();
-            $result = $post->get_post_of_specific_user($author_id);
+            $result = $post->get_user_posts($author_id);
             if (count($result) != 0) 
             {
                 $data   = array();
