@@ -1,7 +1,7 @@
 <?php
 
 namespace Model;
-
+use Fuel\Core\Log;
 /**
  * User
  * 
@@ -50,6 +50,7 @@ class User extends \Orm\Model
             $result['status']   = 402;
             $result['text']     = 'Existing Account';
             $result['data']     = null;
+            Log::warning('Register user failed because there is an existed account');
         }
         return $result;
     }

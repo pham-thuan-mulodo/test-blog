@@ -61,7 +61,7 @@ class Controller_Comment extends Controller_Rest
             $author_id  = $arr_auth[1];
             // get inputs
             $post_id    = (int) Input::post('post_id');
-            $content    = Security::strip_tags(Security::xss_clean(Input::post('content')));
+            $content    = htmlspecialchars_decode(Security::strip_tags(Security::xss_clean(Input::post('content'))), ENT_QUOTES);
             $time       = time();
             $comment    = new Comment();
 

@@ -6,6 +6,7 @@ use Fuel\Core\Input;
 use Fuel\Core\Controller_Rest;
 use Fuel\Core\Security;
 use Auth\Auth;
+use Fuel\Core\Log;
 
 /**
  * Controller_User Controller class for user endpoint. This class contains all API methods related user.
@@ -76,7 +77,6 @@ class Controller_User extends Controller_Rest
                 // create token
                 $token  = Auth::get('login_hash');
                 Session::set('token', $token);
-
                 return $this->response(array(
                     'message' => array(
                         'code' => 200,
@@ -179,6 +179,7 @@ class Controller_User extends Controller_Rest
         } 
         else 
         {
+            Log::error('Register failed because of invalid input');
             return $this->response(array(
                 'message' => array(
                     'code' => 401,
