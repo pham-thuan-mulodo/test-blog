@@ -675,3 +675,4 @@ INFO - 2014-10-29 10:49:54 --> Fuel\Core\Request::__construct - Creating a new m
 INFO - 2014-10-29 10:49:54 --> Fuel\Core\Request::execute - Called
 INFO - 2014-10-29 10:49:54 --> Fuel\Core\Request::execute - Setting main Request
 DEBUG - 2014-10-29 10:49:54 --> ID of comment to edit now = 4
+WARNING - 2014-10-29 11:14:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
