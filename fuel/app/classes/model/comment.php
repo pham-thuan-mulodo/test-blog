@@ -1,7 +1,7 @@
 <?php
 namespace Model;
 use Fuel\Core\DB;
-
+use Fuel\Core\Log;
 /**
  * Comment
  * 
@@ -57,6 +57,7 @@ class Comment extends \Orm\Model
             $result['status'] = 10401;
             $result['text'] = 'Comment Existed';
             $result['data'] = null;
+            Log::error('Add a comment failed because comment for this post existed');
         }
         return $result;
     }
@@ -96,6 +97,7 @@ class Comment extends \Orm\Model
             $result['status']   = 404;
             $result['text']     = 'Not Found';
             $result['data']     = null;
+            Log::error('Deleting comment failed because the comment was not found');
         }
         return $result;
     }

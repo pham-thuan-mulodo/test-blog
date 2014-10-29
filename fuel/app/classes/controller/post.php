@@ -115,7 +115,7 @@ class Controller_Post extends Controller_Rest
         if (Auth::check() && !empty(Session::get('token'))) 
         {
             $post_id    = (int)Input::delete('id');
-            Log::debug('Inputted ID of post now = '.$post_id);
+            Log::debug('Inputted ID of post deleted now = '.$post_id);
             
             if (empty($post_id) || $post_id <= 0) 
             {
@@ -155,7 +155,7 @@ class Controller_Post extends Controller_Rest
         {
             // Check input is valid or invalid
             $post_id    = (int)Input::put('id');
-            Log::debug('Inputted ID of post now = '.$post_id);
+            Log::debug('Inputted ID of post edited now = '.$post_id);
             if (empty($post_id) || $post_id <= 0) 
             {
                 Log::error('Edit post failed because ID of post is not valid');
@@ -290,7 +290,7 @@ class Controller_Post extends Controller_Rest
             } 
             else 
             {
-                Log::error('Get posts of specified user failed because posts were not found in database');
+                Log::error('Get posts of specified user failed because this user was not found in database');
                 return $this->response(array(
                     'message' => array(
                         'code' => 404,

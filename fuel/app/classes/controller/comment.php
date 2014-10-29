@@ -6,6 +6,7 @@ use Auth\Auth;
 use Fuel\Core\Input;
 use Fuel\Core\Security;
 use Model\Comment;
+use Fuel\Core\Log;
 
 /**
  * Controller_Comment Controller class for comment endpoint. This class contains all API methods related comment.
@@ -36,6 +37,7 @@ class Controller_Comment extends Controller_Rest
         } 
         else 
         {
+            Log::error('You are not login yet.');
             return $this->response(array(
                 'message' => array(
                     'code' => 10301,
@@ -64,6 +66,8 @@ class Controller_Comment extends Controller_Rest
             $content    = htmlspecialchars_decode(Security::strip_tags(Security::xss_clean(Input::post('content'))), ENT_QUOTES);
             $time       = time();
             $comment    = new Comment();
+            Log::debug('ID of post commented now = '.$post_id);
+            Log::debug('Content of comment now: '.$content);
 
             if ($post_id > 0 && !empty($post_id) && !empty($content)) 
             {
@@ -89,6 +93,7 @@ class Controller_Comment extends Controller_Rest
                 } 
                 else 
                 {
+                    Log::error('Add comment failed because the post commented was not existed');
                     return $this->response(array(
                         'message' => array(
                             'code' => 10300,
@@ -100,6 +105,7 @@ class Controller_Comment extends Controller_Rest
             } 
             else 
             {
+                Log::error('Add comment failed because of invalid input');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -122,8 +128,10 @@ class Controller_Comment extends Controller_Rest
         if (Auth::check() && !empty(Session::get('token'))) 
         {
             $comm_id = (int)Input::delete('id');
+            Log::debug('ID of comment to delete now = '.$comm_id);
             if (empty($comm_id) || $comm_id <= 0) 
             {
+                Log::error('Deleting comment failed because ID of comment is invalid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -159,8 +167,10 @@ class Controller_Comment extends Controller_Rest
         {
             // Check input is valid or invalid
             $post_id    = (int)Input::get('post_id');
+            Log::debug('ID of specified post now = '.$post_id);
             if (empty($post_id) || $post_id <= 0) 
             {
+                Log::error('Get comments of specified post failed because of invalid input');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -196,6 +206,7 @@ class Controller_Comment extends Controller_Rest
             } 
             else 
             {
+                Log::error('Get comments of specified post failed because this post was not found in database');
                 return $this->response(array(
                     'message' => array(
                         'code' => 404,
@@ -219,8 +230,10 @@ class Controller_Comment extends Controller_Rest
         {
             // Check input is valid or invalid
             $comm_id    =  (int)Input::put('id');
+            Log::debug('ID of comment to edit now = '.$comm_id);
             if (empty($comm_id) || $comm_id <= 0) 
             {
+                Log::error('Edit comment failed because of invalid input');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -280,6 +293,7 @@ class Controller_Comment extends Controller_Rest
                 } 
                 else 
                 {
+                    Log::error('Edit comment failed because this comment was not found');
                     return $this->response(array(
                         'message' => array(
                             'code' => 404,
