@@ -71,8 +71,8 @@ class Controller_User extends Controller_Rest
 
         $username   = Security::strip_tags(Security::xss_clean(Input::post('username')));
         $pass       = Security::strip_tags(Security::xss_clean(Input::post('password')));
-        Log::debug('Username inputted now is '.$username);
-        Log::debug('Password inputted now is '.Auth::instance()->hash_password($pass));
+        Log::debug('Username inputted now is "'.$username.'"');
+        Log::debug('Password inputted now is "'.Auth::instance()->hash_password($pass).'"');
         if (Input::method() == 'POST') 
         {
             if (Auth::login($username, $pass)) 
@@ -118,7 +118,7 @@ class Controller_User extends Controller_Rest
             $user_id    = $arr_auth[1];
             $user       = new User();
             $user->delete_token($user_id);
-            Log::info("User $user_id logged out. Token of user $user_id was deleted in database and session");
+            Log::info('User'.$user_id.' logged out. Token of user'.$user_id.' was deleted in database and session');
 
             Auth::logout();
             Session::destroy();
@@ -155,6 +155,10 @@ class Controller_User extends Controller_Rest
         $pass       = Auth::instance()->hash_password(Input::post('password'));
         $username   = Security::strip_tags(Security::xss_clean(Input::post('username')));
         $time       = time();
+        Log::debug('Inputted Email: "'.$email.'"');
+        Log::debug('Inputted pass: "'.$pass.'"');
+        Log::debug('Inputted Username: "'.$username.'"');
+        
         // check email format
         $result     = filter_var($email, FILTER_VALIDATE_EMAIL);
         if (!empty($email) && !empty($pass) && !empty($username) && !is_bool($result)) 

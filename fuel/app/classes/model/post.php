@@ -1,6 +1,7 @@
 <?php
 namespace Model;
 
+use Fuel\Core\Log;
 /**
  * Post
  * 
@@ -55,6 +56,7 @@ class Post extends \Orm\Model
             $result['status']   = 10301;
             $result['text']     = 'Post Existed';
             $result['data']     = null;
+            Log::error('Create post failed because there is an existed post in database');
         }
         return $result;
     }
@@ -80,7 +82,8 @@ class Post extends \Orm\Model
         {
             $result['status']   = 404;
             $result['text']     = 'Not Found';
-            $result['data']     = null;  
+            $result['data']     = null;
+            Log::error('Delete post fail because the post was not found');
         }
         return $result;
     }

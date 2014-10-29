@@ -247,3 +247,140 @@ WARNING - 2014-10-29 07:43:35 --> Fuel\Core\Fuel::init - The configured locale e
 INFO - 2014-10-29 07:43:35 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
 INFO - 2014-10-29 07:43:35 --> Fuel\Core\Request::execute - Called
 INFO - 2014-10-29 07:43:35 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-29 07:57:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 07:57:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_register"
+INFO - 2014-10-29 07:57:27 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 07:57:27 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 07:57:27 --> Inputted Email: teo@mulodo.com
+DEBUG - 2014-10-29 07:57:27 --> Inputted pass: K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE=
+DEBUG - 2014-10-29 07:57:27 --> Inputted Username: teo
+WARNING - 2014-10-29 07:57:27 --> Register user failed because there is an existed account
+WARNING - 2014-10-29 07:57:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 07:57:28 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_register"
+INFO - 2014-10-29 07:57:28 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 07:57:28 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 07:57:28 --> Inputted Email: teo@mulodo.com
+DEBUG - 2014-10-29 07:57:28 --> Inputted pass: K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE=
+DEBUG - 2014-10-29 07:57:28 --> Inputted Username: teo
+WARNING - 2014-10-29 07:57:28 --> Register user failed because there is an existed account
+WARNING - 2014-10-29 08:06:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:06:18 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_register"
+INFO - 2014-10-29 08:06:18 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:06:18 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2014-10-29 08:06:18 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "welcome/404"
+INFO - 2014-10-29 08:06:18 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:06:18 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-29 08:06:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:06:28 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-29 08:06:28 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:06:28 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:06:28 --> Inputted title of post now is: 
+DEBUG - 2014-10-29 08:06:28 --> Inputted content of post now is: sample content
+ERROR - 2014-10-29 08:06:28 --> Create post failed because of invalid input
+WARNING - 2014-10-29 08:07:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:07:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 08:07:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:07:22 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-29 08:07:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:07:51 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-29 08:07:51 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:07:51 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:07:51 --> Inputted title of post now is: One advanced diverted
+DEBUG - 2014-10-29 08:07:51 --> Inputted content of post now is: One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw.
+ERROR - 2014-10-29 08:07:51 --> Create post failed because there is an existed post in database
+WARNING - 2014-10-29 08:07:52 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:07:52 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-29 08:07:52 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:07:52 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:07:52 --> Inputted title of post now is: One advanced diverted
+DEBUG - 2014-10-29 08:07:52 --> Inputted content of post now is: One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw.
+ERROR - 2014-10-29 08:07:52 --> Create post failed because there is an existed post in database
+WARNING - 2014-10-29 08:14:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:14:51 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-29 08:14:51 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:14:51 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:14:51 --> Inputted title of post now is: "One advanced diverted"
+DEBUG - 2014-10-29 08:14:51 --> Inputted content of post now is: "One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw."
+ERROR - 2014-10-29 08:14:51 --> Create post failed because there is an existed post in database
+WARNING - 2014-10-29 08:19:33 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:19:33 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-29 08:19:33 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:19:33 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:19:33 --> Inputted ID of post now=0
+ERROR - 2014-10-29 08:19:33 --> Delete post failed because ID of post is invalid
+WARNING - 2014-10-29 08:19:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:19:51 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-29 08:19:51 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:19:51 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:19:51 --> Inputted ID of post now=-2
+ERROR - 2014-10-29 08:19:51 --> Delete post failed because ID of post is invalid
+WARNING - 2014-10-29 08:20:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:20:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-29 08:20:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:20:22 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:20:22 --> Inputted ID of post now = -2
+ERROR - 2014-10-29 08:20:22 --> Delete post failed because ID of post is invalid
+WARNING - 2014-10-29 08:20:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:20:32 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-29 08:20:32 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:20:32 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:20:32 --> Inputted ID of post now = 45
+ERROR - 2014-10-29 08:20:32 --> Delete post fail because the post was not found
+WARNING - 2014-10-29 08:34:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:34:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 08:34:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:34:22 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:34:22 --> Inputted ID of post now = 0
+ERROR - 2014-10-29 08:34:22 --> Edit post failed because ID of post is not valid
+WARNING - 2014-10-29 08:34:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:34:34 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 08:34:34 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:34:34 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:34:34 --> Inputted ID of post now = 55
+ERROR - 2014-10-29 08:34:34 --> Get information of post failed because the post was not found
+WARNING - 2014-10-29 08:35:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:35:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 08:35:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:35:26 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:35:27 --> Inputted ID of post now = 55
+ERROR - 2014-10-29 08:35:27 --> Getting information of post to edit failed because the post was not found
+WARNING - 2014-10-29 08:35:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:35:51 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 08:35:51 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:35:51 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:35:51 --> Inputted ID of post now = 5
+ERROR - 2014-10-29 08:35:51 --> Getting information of post to edit failed because the post was not found
+WARNING - 2014-10-29 08:35:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:35:54 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 08:35:54 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:35:54 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:35:54 --> Inputted ID of post now = 12
+ERROR - 2014-10-29 08:35:54 --> Getting information of post to edit failed because the post was not found
+WARNING - 2014-10-29 08:35:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:35:56 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 08:35:56 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:35:56 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:35:56 --> Inputted ID of post now = 23
+WARNING - 2014-10-29 08:42:52 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:42:52 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 08:42:52 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:42:52 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:42:52 --> Inputted ID of post now = 0
+ERROR - 2014-10-29 08:42:52 --> Edit post failed because ID of post is not valid
+WARNING - 2014-10-29 08:43:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:43:29 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-29 08:43:29 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:43:29 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:43:29 --> Inputted ID of user now = 0
+ERROR - 2014-10-29 08:43:29 --> Get posts of specified user failed because of invalid ID of user
+WARNING - 2014-10-29 08:43:53 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:43:53 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-29 08:43:53 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:43:53 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:43:53 --> Inputted ID of user now = 35
+ERROR - 2014-10-29 08:43:53 --> Get posts of specified user failed because posts were not found in database
+WARNING - 2014-10-29 08:44:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 08:44:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-29 08:44:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 08:44:31 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 08:44:32 --> Inputted ID of user now = 2

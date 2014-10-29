@@ -6,6 +6,7 @@ use Auth\Auth;
 use Fuel\Core\Input;
 use Fuel\Core\Security;
 use Model\Post;
+use Fuel\Core\Log;
 
 /**
  * Controller_Post Controller class for post endpoint. This class contains all API methods related post.
@@ -36,6 +37,7 @@ class Controller_Post extends Controller_Rest
         } 
         else 
         {
+            Log::error('You are not login yet.');
             return $this->response(array(
                 'message' => array(
                     'code' => 10301,
@@ -64,7 +66,10 @@ class Controller_Post extends Controller_Rest
             $outline    = Security::strip_tags(Security::xss_clean(Input::post('outline')));
             $content    = Security::strip_tags(Security::xss_clean(Input::post('content')));
             $time       = time();
-
+            
+            Log::debug('Inputted title of post now is: "'.$title.'"');
+            Log::debug('Inputted content of post now is: "'.$content.'"');
+            
             if (!empty($title) && !empty($content)) 
             {
                 $data   = array(
@@ -87,6 +92,7 @@ class Controller_Post extends Controller_Rest
             } 
             else 
             {
+                Log::error('Create post failed because of invalid input');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -109,8 +115,11 @@ class Controller_Post extends Controller_Rest
         if (Auth::check() && !empty(Session::get('token'))) 
         {
             $post_id    = (int)Input::delete('id');
+            Log::debug('Inputted ID of post now = '.$post_id);
+            
             if (empty($post_id) || $post_id <= 0) 
             {
+                Log::error('Delete post failed because ID of post is invalid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -146,8 +155,10 @@ class Controller_Post extends Controller_Rest
         {
             // Check input is valid or invalid
             $post_id    = (int)Input::put('id');
+            Log::debug('Inputted ID of post now = '.$post_id);
             if (empty($post_id) || $post_id <= 0) 
             {
+                Log::error('Edit post failed because ID of post is not valid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -213,6 +224,7 @@ class Controller_Post extends Controller_Rest
                 } 
                 else 
                 {
+                    Log::error('Getting information of post to edit failed because the post was not found');
                     return $this->response(array(
                         'message' => array(
                             'code' => 404,
@@ -237,8 +249,11 @@ class Controller_Post extends Controller_Rest
         {
             // Check input is valid or invalid
             $author_id  = (int)Input::get('author_id');
+            Log::debug('Inputted ID of user now = '.$author_id);
+            
             if (empty($author_id) || $author_id <= 0) 
             {
+                Log::error('Get posts of specified user failed because of invalid ID of user');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -275,6 +290,7 @@ class Controller_Post extends Controller_Rest
             } 
             else 
             {
+                Log::error('Get posts of specified user failed because posts were not found in database');
                 return $this->response(array(
                     'message' => array(
                         'code' => 404,
