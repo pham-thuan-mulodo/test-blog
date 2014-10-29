@@ -37,6 +37,7 @@ class Controller_User extends Controller_Rest
         } 
         else 
         {
+            Log::error('You are not login yet.');
             return $this->response(array(
                 'message'  => array(
                     'code' => 10301,
@@ -70,6 +71,8 @@ class Controller_User extends Controller_Rest
 
         $username   = Security::strip_tags(Security::xss_clean(Input::post('username')));
         $pass       = Security::strip_tags(Security::xss_clean(Input::post('password')));
+        Log::debug('Username inputted now is '.$username);
+        Log::debug('Password inputted now is '.Auth::instance()->hash_password($pass));
         if (Input::method() == 'POST') 
         {
             if (Auth::login($username, $pass)) 
@@ -88,6 +91,7 @@ class Controller_User extends Controller_Rest
             } 
             else 
             {
+                Log::error('Login failed because username or password is not valid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -114,6 +118,7 @@ class Controller_User extends Controller_Rest
             $user_id    = $arr_auth[1];
             $user       = new User();
             $user->delete_token($user_id);
+            Log::info("User $user_id logged out. Token of user $user_id was deleted in database and session");
 
             Auth::logout();
             Session::destroy();
@@ -201,8 +206,10 @@ class Controller_User extends Controller_Rest
         if (Auth::check() && !empty(Session::get('token'))) 
         {
             $user_id    = (int)Input::put('id');
+            Log::debug('ID of user now is: '.$user_id);
             if (empty($user_id) || $user_id <= 0) 
             {
+                Log::error('ID of user is not valid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,

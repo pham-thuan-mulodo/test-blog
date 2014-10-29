@@ -80,6 +80,7 @@ class User extends \Orm\Model
                 ),
                 'data' => null
             );
+            Log::error('Get information of user failed. Because ID of user was not found in user table');
             die(json_encode($arr_msg));
         } 
         else 
