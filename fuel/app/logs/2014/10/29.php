@@ -613,3 +613,65 @@ INFO - 2014-10-29 10:34:32 --> Fuel\Core\Request::__construct - Creating a new m
 INFO - 2014-10-29 10:34:32 --> Fuel\Core\Request::execute - Called
 INFO - 2014-10-29 10:34:32 --> Fuel\Core\Request::execute - Setting main Request
 DEBUG - 2014-10-29 10:34:32 --> ID of comment to edit now = 4
+WARNING - 2014-10-29 10:47:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:47:21 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-29 10:47:21 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:47:21 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:47:21 --> ID of specified post now = 2
+ERROR - 2014-10-29 10:47:21 --> Get comments of specified post failed because this post was not found in database
+WARNING - 2014-10-29 10:47:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:47:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-29 10:47:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:47:26 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:47:27 --> ID of specified post now = 1
+ERROR - 2014-10-29 10:47:27 --> Get comments of specified post failed because this post was not found in database
+WARNING - 2014-10-29 10:47:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:47:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-29 10:47:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:47:30 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:47:30 --> ID of specified post now = 12
+ERROR - 2014-10-29 10:47:30 --> Get comments of specified post failed because this post was not found in database
+WARNING - 2014-10-29 10:47:33 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:47:33 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-29 10:47:33 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:47:33 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:47:33 --> ID of specified post now = 21
+ERROR - 2014-10-29 10:47:33 --> Get comments of specified post failed because this post was not found in database
+WARNING - 2014-10-29 10:48:20 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:48:20 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-29 10:48:20 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:48:20 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:48:20 --> ID of specified post now = 21
+WARNING - 2014-10-29 10:48:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:48:42 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-29 10:48:42 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:48:42 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:48:42 --> ID of specified post now = 21
+ERROR - 2014-10-29 10:48:42 --> Call to undefined method Model\Comment::findd()
+ERROR - 2014-10-29 10:48:42 --> Get comments of specified post failed because this post was not found in database
+WARNING - 2014-10-29 10:49:12 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:49:12 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-29 10:49:12 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:49:12 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:49:12 --> ID of specified post now = 21
+ERROR - 2014-10-29 10:49:12 --> Undefined variable: a
+ERROR - 2014-10-29 10:49:12 --> Get comments of specified post failed because this post was not found in database
+WARNING - 2014-10-29 10:49:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:49:45 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-29 10:49:45 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:49:45 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:49:45 --> ID of comment to edit now = 4
+ERROR - 2014-10-29 10:49:45 --> Undefined variable: idd
+ERROR - 2014-10-29 10:49:45 --> Edit comment failed because this comment was not found
+WARNING - 2014-10-29 10:49:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:49:47 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-29 10:49:47 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:49:47 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:49:47 --> ID of comment to edit now = 4
+ERROR - 2014-10-29 10:49:47 --> Undefined variable: idd
+ERROR - 2014-10-29 10:49:47 --> Edit comment failed because this comment was not found
+WARNING - 2014-10-29 10:49:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:49:54 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-29 10:49:54 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:49:54 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:49:54 --> ID of comment to edit now = 4
