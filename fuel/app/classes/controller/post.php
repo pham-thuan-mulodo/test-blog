@@ -92,7 +92,7 @@ class Controller_Post extends Controller_Rest
             } 
             else 
             {
-                Log::error('Create post failed because of invalid input');
+                Log::debug('Create post failed because of invalid input');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -119,7 +119,7 @@ class Controller_Post extends Controller_Rest
             
             if (empty($post_id) || $post_id <= 0) 
             {
-                Log::error('Delete post failed because ID of post is invalid');
+                Log::debug('Delete post failed because ID of post is invalid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -158,7 +158,7 @@ class Controller_Post extends Controller_Rest
             Log::debug('Inputted ID of post edited now = '.$post_id);
             if (empty($post_id) || $post_id <= 0) 
             {
-                Log::error('Edit post failed because ID of post is not valid');
+                Log::debug('Edit post failed because ID of post is not valid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -253,7 +253,7 @@ class Controller_Post extends Controller_Rest
             
             if (empty($author_id) || $author_id <= 0) 
             {
-                Log::error('Get posts of specified user failed because of invalid ID of user');
+                Log::debug('Get posts of specified user failed because of invalid ID of user');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,

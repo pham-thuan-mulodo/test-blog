@@ -2,6 +2,7 @@
 
 namespace Model;
 use Fuel\Core\Log;
+use Exception;
 /**
  * User
  * 
@@ -30,29 +31,35 @@ class User extends \Orm\Model
      */
     public static function register($data) 
     {
-        $user   = User::forge($data);
-        // Check Existing Account
-        $entry  = $user->find('all', array(
-            'where' => array(
-                array('email', $data['email']),
-                array('username', $data['username'])
-            )
-        ));
-        if (count($entry) == 0) 
+        try 
         {
-            $user->save();
-            $result['status']   = 200;
-            $result['text']     = 'Register Successfully';
-            $result['data']     = null;
+            $user   = User::forge($data);
+            // Check Existing Account
+            $entry  = $user->find('all', array(
+                'where' => array(
+                    array('email', $data['email']),
+                    array('username', $data['username'])
+                )
+            ));
+            if (count($entry) == 0) 
+            {
+                $user->save();
+                $result['status']   = 200;
+                $result['text']     = 'Register Successfully';
+                $result['data']     = null;
+            } 
+            else 
+            {
+                $result['status']   = 402;
+                $result['text']     = 'Existing Account';
+                $result['data']     = null;
+                Log::warning('Register user failed because there is an existed account');
+            }
+            return $result;
         } 
-        else 
-        {
-            $result['status']   = 402;
-            $result['text']     = 'Existing Account';
-            $result['data']     = null;
-            Log::warning('Register user failed because there is an existed account');
+        catch (Exception $ex) {
+            Log::error($ex->getMessage());
         }
-        return $result;
     }
 
     /**
@@ -63,36 +70,42 @@ class User extends \Orm\Model
      */
     public function get_user_info($user_id) 
     {
-        $user   = User::forge();
-        $entry  = $user->find('all', array(
-            'where' => array(
-                array('id', $user_id)
-            )
-        ));
-        if (count($entry) == 0) 
-        {
-            $result['status']   = 404;
-            $result['text']     = 'Not Found';
-            $arr_msg            = array(
-                'message' => array(
-                    'code' => $result['status'],
-                    'text' => $result['text'],
-                ),
-                'data' => null
-            );
-            Log::error('Get information of user failed. Because ID of user was not found in user table');
-            die(json_encode($arr_msg));
-        } 
-        else 
-        {
-            $result['status']   = 200;
-            $result['text']     = '';
-            foreach ($entry as $item) 
+        try {
+            $user   = User::forge();
+            $entry  = $user->find('all', array(
+                'where' => array(
+                    array('id', $user_id)
+                )
+            ));
+            if (count($entry) == 0) 
             {
-                $result['data'] = $item;
+                $result['status']   = 404;
+                $result['text']     = 'Not Found';
+                $arr_msg            = array(
+                    'message' => array(
+                        'code' => $result['status'],
+                        'text' => $result['text'],
+                    ),
+                    'data' => null
+                );
+                Log::error('Get information of user failed. Because ID of user was not found in user table');
+                die(json_encode($arr_msg));
+            } 
+            else 
+            {
+                $result['status']   = 200;
+                $result['text']     = '';
+                foreach ($entry as $item) 
+                {
+                    $result['data'] = $item;
+                }
             }
+            return $result;
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
         }
-        return $result;
     }
     
     /**
@@ -103,9 +116,14 @@ class User extends \Orm\Model
      */
     public function update_user($user_id, $data) 
     {
-        $entry  = User::find($user_id);
-        $entry->set($data);
-        $entry->save();
+        try 
+        {
+            $entry  = User::find($user_id);
+            $entry->set($data);
+            $entry->save();
+        } catch (Exception $ex) {
+            Log::error($ex->getMessage());
+        }
     }
     
     /**
@@ -115,8 +133,15 @@ class User extends \Orm\Model
      */
     public function delete_token($user_id) 
     {
-        $entry              = User::find($user_id);
-        $entry->login_hash  = '';
-        $entry->save();
+        try
+        {
+            $entry              = User::find($user_id);
+            $entry->login_hash  = '';
+            $entry->save();
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
     }
 }

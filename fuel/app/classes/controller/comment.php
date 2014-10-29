@@ -105,7 +105,7 @@ class Controller_Comment extends Controller_Rest
             } 
             else 
             {
-                Log::error('Add comment failed because of invalid input');
+                Log::debug('Add comment failed because of invalid input');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -131,7 +131,7 @@ class Controller_Comment extends Controller_Rest
             Log::debug('ID of comment to delete now = '.$comm_id);
             if (empty($comm_id) || $comm_id <= 0) 
             {
-                Log::error('Deleting comment failed because ID of comment is invalid');
+                Log::debug('Deleting comment failed because ID of comment is invalid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -170,7 +170,7 @@ class Controller_Comment extends Controller_Rest
             Log::debug('ID of specified post now = '.$post_id);
             if (empty($post_id) || $post_id <= 0) 
             {
-                Log::error('Get comments of specified post failed because of invalid input');
+                Log::debug('Get comments of specified post failed because of invalid input');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -233,7 +233,7 @@ class Controller_Comment extends Controller_Rest
             Log::debug('ID of comment to edit now = '.$comm_id);
             if (empty($comm_id) || $comm_id <= 0) 
             {
-                Log::error('Edit comment failed because of invalid input');
+                Log::debug('Edit comment failed because of invalid input');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,

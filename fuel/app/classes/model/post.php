@@ -2,6 +2,7 @@
 namespace Model;
 
 use Fuel\Core\Log;
+use Exception;
 /**
  * Post
  * 
@@ -37,28 +38,36 @@ class Post extends \Orm\Model
      */
     public function create_post($data) 
     {
-        $entry  = Post::find('all', array(
-           'where' => array(
-               array('title', '=', $data['title']),
-               array('content', '=', $data['content'])
-           )
-        ));
-        $post   = Post::forge($data);
-        if(count($entry) == 0) 
+        try
         {
-            $post->save();
-            $result['status']   = 200;
-            $result['text']     = '';
-            $result['data']     = null;
-        }
-        else 
+            $entry  = Post::find('all', array(
+            'where' => array(
+                    array('title', '=', $data['title']),
+                    array('content', '=', $data['content'])
+                )
+            ));
+            $post   = Post::forge($data);
+            if(count($entry) == 0) 
+            {
+                $post->save();
+                $result['status']   = 200;
+                $result['text']     = '';
+                $result['data']     = null;
+            }
+            else 
+            {
+                $result['status']   = 10301;
+                $result['text']     = 'Post Existed';
+                $result['data']     = null;
+                Log::error('Create post failed because there is an existed post in database');
+            }
+            return $result;
+        } 
+        catch (Exception $ex) 
         {
-            $result['status']   = 10301;
-            $result['text']     = 'Post Existed';
-            $result['data']     = null;
-            Log::error('Create post failed because there is an existed post in database');
+            Log::error($ex->getMessage());
         }
-        return $result;
+        
     }
     
     /**
@@ -69,23 +78,30 @@ class Post extends \Orm\Model
      */
     public function delete_post($id) 
     {
-        $entry  = Post::find($id);
-        if(count($entry) != 0) 
+        try
         {
-            $post   = Post::find($id);
-            $result = $post->delete();
-            $result['status']   = 200;
-            $result['text']     = 'Delete successfully';
-            $result['data']     = null;   
-        }
-        else 
+           $entry  = Post::find($id);
+            if(count($entry) != 0) 
+            {
+                $post   = Post::find($id);
+                $result = $post->delete();
+                $result['status']   = 200;
+                $result['text']     = 'Delete successfully';
+                $result['data']     = null;   
+            }
+            else 
+            {
+                $result['status']   = 404;
+                $result['text']     = 'Not Found';
+                $result['data']     = null;
+                Log::error('Delete post fail because the post was not found');
+            }
+            return $result; 
+        } 
+        catch (Exception $ex) 
         {
-            $result['status']   = 404;
-            $result['text']     = 'Not Found';
-            $result['data']     = null;
-            Log::error('Delete post fail because the post was not found');
+            Log::error($ex->getMessage());
         }
-        return $result;
     }
     
     /**
@@ -96,8 +112,14 @@ class Post extends \Orm\Model
      */
     public function get_post_info($id) 
     {
-        $result = Post::find($id);
-        return $result;
+        try 
+        {
+            $result = Post::find($id);
+            return $result;
+        } catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
     }
     
     /**
@@ -108,9 +130,16 @@ class Post extends \Orm\Model
      */
     public function update_post($id, $data) 
     {
-        $entry  = Post::find($id);
-        $entry->set($data);
-        $entry->save();
+        try
+        {
+            $entry  = Post::find($id);
+            $entry->set($data);
+            $entry->save();
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
     }
     
     /**
@@ -121,12 +150,19 @@ class Post extends \Orm\Model
      */
     public function get_user_posts($user_id) 
     {
-        $entry  = Post::find('all', array(
-           'where' => array(
-               array('author_id', $user_id)
-           ) 
-        ));
-        return $entry;
+        try 
+        {
+            $entry  = Post::find('all', array(
+                'where' => array(
+                    array('author_id', $user_id)
+                ) 
+            ));
+            return $entry;
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
     }
 }
 

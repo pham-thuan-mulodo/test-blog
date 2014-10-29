@@ -91,7 +91,7 @@ class Controller_User extends Controller_Rest
             } 
             else 
             {
-                Log::error('Login failed because username or password is not valid');
+                Log::debug('Login failed because username or password is not valid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,
@@ -188,7 +188,7 @@ class Controller_User extends Controller_Rest
         } 
         else 
         {
-            Log::error('Register failed because of invalid input');
+            Log::debug('Register failed because of invalid input');
             return $this->response(array(
                 'message' => array(
                     'code' => 401,
@@ -213,7 +213,7 @@ class Controller_User extends Controller_Rest
             Log::debug('ID of user now is: '.$user_id);
             if (empty($user_id) || $user_id <= 0) 
             {
-                Log::error('ID of user is not valid');
+                Log::debug('ID of user is not valid');
                 return $this->response(array(
                     'message' => array(
                         'code' => 401,

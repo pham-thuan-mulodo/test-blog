@@ -466,3 +466,150 @@ INFO - 2014-10-29 09:32:04 --> Fuel\Core\Request::execute - Called
 INFO - 2014-10-29 09:32:04 --> Fuel\Core\Request::execute - Setting main Request
 DEBUG - 2014-10-29 09:32:04 --> ID of comment to edit now = 55
 ERROR - 2014-10-29 09:32:04 --> Edit comment failed because this comment was not found
+WARNING - 2014-10-29 09:39:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 09:39:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-29 09:39:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 09:39:22 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2014-10-29 09:39:22 --> User24 logged out. Token of user24 was deleted in database and session
+WARNING - 2014-10-29 09:39:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 09:39:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 09:39:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 09:39:31 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-29 09:39:31 --> You are not login yet.
+WARNING - 2014-10-29 10:00:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:00:56 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-29 10:00:56 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:00:56 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-29 10:00:56 --> You are not login yet.
+DEBUG - 2014-10-29 10:00:56 --> Username inputted now is "richard"
+DEBUG - 2014-10-29 10:00:56 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-29 10:01:20 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:01:20 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:01:20 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:01:20 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:01:20 --> ID of user now is: 20
+WARNING - 2014-10-29 10:01:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:01:44 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:01:44 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:01:44 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:01:44 --> ID of user now is: 20
+WARNING - 2014-10-29 10:01:55 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:01:55 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:01:55 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:01:55 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:01:55 --> ID of user now is: 20
+WARNING - 2014-10-29 10:02:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:02:41 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:02:41 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:02:41 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:02:41 --> ID of user now is: 20
+WARNING - 2014-10-29 10:03:16 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:03:16 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:03:16 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:03:16 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:03:16 --> ID of user now is: 20
+ERROR - 2014-10-29 10:03:16 --> Missing argument 1 for Orm\Model::set(), called in C:\wamp\www\test-blog\fuel\app\classes\model\user.php on line 109 and defined
+WARNING - 2014-10-29 10:03:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:03:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:03:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:03:22 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:03:23 --> ID of user now is: 20
+ERROR - 2014-10-29 10:03:23 --> Missing argument 1 for Orm\Model::set(), called in C:\wamp\www\test-blog\fuel\app\classes\model\user.php on line 109 and defined
+WARNING - 2014-10-29 10:03:23 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:03:23 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:03:23 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:03:23 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:03:23 --> ID of user now is: 20
+ERROR - 2014-10-29 10:03:23 --> Missing argument 1 for Orm\Model::set(), called in C:\wamp\www\test-blog\fuel\app\classes\model\user.php on line 109 and defined
+WARNING - 2014-10-29 10:04:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:04:28 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:04:28 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:04:28 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:04:28 --> ID of user now is: 34344
+ERROR - 2014-10-29 10:04:28 --> Get information of user failed. Because ID of user was not found in user table
+WARNING - 2014-10-29 10:04:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:04:45 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:04:45 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:04:45 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:04:45 --> ID of user now is: 0
+DEBUG - 2014-10-29 10:04:45 --> ID of user is not valid
+WARNING - 2014-10-29 10:07:53 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:07:53 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_register"
+INFO - 2014-10-29 10:07:53 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:07:53 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:07:53 --> Inputted Email: "tom@yahoo.com"
+DEBUG - 2014-10-29 10:07:53 --> Inputted pass: "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+DEBUG - 2014-10-29 10:07:53 --> Inputted Username: "tom"
+ERROR - 2014-10-29 10:07:53 --> Use of undefined constant dff - assumed 'dff'
+ERROR - 2014-10-29 10:07:53 --> Notice - Undefined variable: result in C:\wamp\www\test-blog\fuel\app\classes\model\user.php on line 61
+WARNING - 2014-10-29 10:08:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:08:32 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_register"
+INFO - 2014-10-29 10:08:32 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:08:32 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:08:32 --> Inputted Email: "tom@yahoo.com"
+DEBUG - 2014-10-29 10:08:32 --> Inputted pass: "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+DEBUG - 2014-10-29 10:08:32 --> Inputted Username: "tom"
+ERROR - 2014-10-29 10:08:32 --> Use of undefined constant dff - assumed 'dff'
+WARNING - 2014-10-29 10:17:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:17:59 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:17:59 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:17:59 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:18:00 --> ID of user now is: 2
+WARNING - 2014-10-29 10:18:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:18:11 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:18:11 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:18:11 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:18:11 --> ID of user now is: 2
+WARNING - 2014-10-29 10:18:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:18:13 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:18:13 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:18:13 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:18:13 --> ID of user now is: 2
+WARNING - 2014-10-29 10:18:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:18:14 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:18:14 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:18:14 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:18:14 --> ID of user now is: 2
+WARNING - 2014-10-29 10:18:52 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:18:52 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:18:52 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:18:52 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:18:52 --> ID of user now is: 2
+ERROR - 2014-10-29 10:18:52 --> Fatal Error - Call to undefined function Model\save() in C:\wamp\www\test-blog\fuel\app\classes\model\user.php on line 123
+WARNING - 2014-10-29 10:19:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:19:14 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-29 10:19:14 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:19:14 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:19:14 --> ID of user now is: 2
+WARNING - 2014-10-29 10:27:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:27:06 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 10:27:06 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:27:06 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:27:06 --> Inputted ID of post edited now = 2
+WARNING - 2014-10-29 10:27:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:27:09 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-29 10:27:09 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:27:09 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:27:09 --> Inputted ID of post edited now = 4
+WARNING - 2014-10-29 10:27:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:27:25 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-29 10:27:25 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:27:25 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:27:25 --> Inputted ID of user now = 0
+DEBUG - 2014-10-29 10:27:25 --> Get posts of specified user failed because of invalid ID of user
+WARNING - 2014-10-29 10:27:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:27:35 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-29 10:27:35 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:27:35 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:27:35 --> Inputted ID of user now = 3
+ERROR - 2014-10-29 10:27:35 --> Get posts of specified user failed because this user was not found in database
+WARNING - 2014-10-29 10:27:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:27:37 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-29 10:27:37 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:27:37 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:27:37 --> Inputted ID of user now = 2
+WARNING - 2014-10-29 10:34:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-29 10:34:32 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-29 10:34:32 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-29 10:34:32 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-29 10:34:32 --> ID of comment to edit now = 4

@@ -2,6 +2,7 @@
 namespace Model;
 use Fuel\Core\DB;
 use Fuel\Core\Log;
+use Exception;
 /**
  * Comment
  * 
@@ -37,29 +38,36 @@ class Comment extends \Orm\Model
      */
     public function add_comment($data) 
     {
-        $entry      = Comment::find('all', array(
-           'where' => array(
-               array('content', '=', $data['content']),
-               array('author_id', '=', $data['author_id']),
-               array('post_id', '=', $data['post_id'])
-           )
-        ));
-        $comment    = Comment::forge($data);
-        if(count($entry) == 0) 
+        try 
         {
-            $comment->save();
-            $result['status'] = 200;
-            $result['text'] = '';
-            $result['data'] = null;
-        }
-        else 
+            $entry      = Comment::find('all', array(
+                'where' => array(
+                    array('content', '=', $data['content']),
+                    array('author_id', '=', $data['author_id']),
+                    array('post_id', '=', $data['post_id'])
+                )
+            ));
+            $comment    = Comment::forge($data);
+            if(count($entry) == 0) 
+            {
+                $comment->save();
+                $result['status'] = 200;
+                $result['text'] = '';
+                $result['data'] = null;
+            }
+            else 
+            {
+                $result['status'] = 10401;
+                $result['text'] = 'Comment Existed';
+                $result['data'] = null;
+                Log::error('Add a comment failed because comment for this post existed');
+            }
+            return $result;
+        } 
+        catch (Exception $ex) 
         {
-            $result['status'] = 10401;
-            $result['text'] = 'Comment Existed';
-            $result['data'] = null;
-            Log::error('Add a comment failed because comment for this post existed');
+            Log::error($ex->getMessage());
         }
-        return $result;
     }
     
     /**
@@ -70,8 +78,15 @@ class Comment extends \Orm\Model
      */
     public function is_existed_post($id) 
     {
-        $post   = DB::select()->from('post')->where('id', $id)->execute();
-        return count($post);
+        try
+        {
+            $post   = DB::select()->from('post')->where('id', $id)->execute();
+            return count($post);
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
     }
     
     /**
@@ -82,24 +97,31 @@ class Comment extends \Orm\Model
      */
     public function delete_comment($id) 
     {
-        // Check comment is exist or not exist
-        $entry  = Comment::find($id);
-        if(count($entry) != 0) 
+        try
         {
-            $comment = Comment::find($id);
-            $result  = $comment->delete();
-            $result['status']   = 200;
-            $result['text']     = 'Delete successfully';
-            $result['data']     = null;
-        }
-        else 
+            // Check comment is exist or not exist
+            $entry  = Comment::find($id);
+            if(count($entry) != 0) 
+            {
+                $comment = Comment::find($id);
+                $result  = $comment->delete();
+                $result['status']   = 200;
+                $result['text']     = 'Delete successfully';
+                $result['data']     = null;
+            }
+            else 
+            {
+                $result['status']   = 404;
+                $result['text']     = 'Not Found';
+                $result['data']     = null;
+                Log::error('Deleting comment failed because the comment was not found');
+            }
+            return $result;
+        } 
+        catch (Exception $ex) 
         {
-            $result['status']   = 404;
-            $result['text']     = 'Not Found';
-            $result['data']     = null;
-            Log::error('Deleting comment failed because the comment was not found');
+            Log::error($ex->getMessage());
         }
-        return $result;
     }
     
     /**
@@ -110,12 +132,19 @@ class Comment extends \Orm\Model
      */
     public function get_comments_post($post_id) 
     {
-        $entry  = Comment::find('all', array(
-           'where' => array(
-               array('post_id', $post_id)
-           ) 
-        ));
-        return $entry;
+        try
+        {
+           $entry  = Comment::find('all', array(
+                'where' => array(
+                    array('post_id', $post_id)
+                ) 
+            ));
+            return $entry; 
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
     }
     
     /**
@@ -126,8 +155,15 @@ class Comment extends \Orm\Model
      */
     public function get_comment($id) 
     {
-        $result = Comment::find($id);
-        return $result;
+        try
+        {
+            $result = Comment::find($id);
+            return $result;
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
     }
     
     /**
@@ -138,9 +174,16 @@ class Comment extends \Orm\Model
      */
     public function update_comment($id, $data) 
     {
-        $entry  = Comment::find($id);
-        $entry->set($data);
-        $entry->save();
+        try
+        {
+            $entry  = Comment::find($id);
+            $entry->set($data);
+            $entry->save();
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
     }
 }
 
