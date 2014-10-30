@@ -3731,3 +3731,1308 @@ INFO - 2014-10-30 09:41:01 --> Fuel\Core\Request::execute - Setting main Request
 ERROR - 2014-10-30 09:41:01 --> You are not login yet.
 DEBUG - 2014-10-30 09:41:01 --> Username inputted now is "loc"
 DEBUG - 2014-10-30 09:41:01 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 09:48:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 09:48:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:25 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:25 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:25 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:25 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:25 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:25 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 09:48:25 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:25 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:25 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:25 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:25 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:25 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:26 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 09:48:26 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:26 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:26 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 09:48:26 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:26 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:26 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 09:48:26 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:26 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:26 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 09:48:26 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:26 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:26 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 09:48:26 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:26 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:26 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:27 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 09:48:27 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:27 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:27 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 09:48:27 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:27 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:27 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 09:48:27 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:48:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:27 --> You are not login yet.
+DEBUG - 2014-10-30 09:48:27 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 09:48:27 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user_logout"
+WARNING - 2014-10-30 09:48:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:48:27 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:48:27 --> You are not login yet.
+WARNING - 2014-10-30 09:49:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 09:49:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:46 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:46 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 09:49:46 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:46 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:46 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 09:49:46 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:46 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:46 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 09:49:46 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:46 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:46 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 09:49:46 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:46 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:47 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:47 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 09:49:47 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:47 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:47 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 09:49:47 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:47 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:47 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 09:49:47 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:47 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:47 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 09:49:47 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:47 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:47 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 09:49:47 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:47 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:49:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:48 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:49:48 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:48 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:48 --> You are not login yet.
+DEBUG - 2014-10-30 09:49:48 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 09:49:48 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:49:48 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user_logout"
+WARNING - 2014-10-30 09:49:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:49:48 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 09:49:48 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:49:48 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:49:48 --> You are not login yet.
+WARNING - 2014-10-30 09:52:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 09:52:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:02 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:02 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 09:52:02 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:02 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:02 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 09:52:02 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:02 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:02 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 09:52:02 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:02 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:02 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:02 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 09:52:02 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:03 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:03 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 09:52:03 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:03 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:03 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 09:52:03 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:03 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:03 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 09:52:03 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:03 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:03 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 09:52:03 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:03 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:03 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:03 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 09:52:03 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:04 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:52:04 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:04 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:52:04 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:04 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:04 --> You are not login yet.
+DEBUG - 2014-10-30 09:52:04 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 09:52:04 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:52:04 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user_logout"
+WARNING - 2014-10-30 09:52:04 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:52:04 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 09:52:04 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:52:04 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:52:04 --> You are not login yet.
+WARNING - 2014-10-30 09:55:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 09:55:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:55:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:55:59 --> You are not login yet.
+DEBUG - 2014-10-30 09:55:59 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 09:55:59 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:55:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:55:59 --> You are not login yet.
+DEBUG - 2014-10-30 09:55:59 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 09:55:59 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:55:59 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:00 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:00 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 09:56:00 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:00 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:00 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 09:56:00 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:00 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:00 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 09:56:00 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:00 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:00 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 09:56:00 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:00 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:00 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 09:56:00 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:00 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:01 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:01 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 09:56:01 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:01 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:01 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 09:56:01 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:01 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:01 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:01 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 09:56:01 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 09:56:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 09:56:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:29 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:29 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:29 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:29 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:29 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:29 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 09:56:29 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:29 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:29 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:29 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:29 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:29 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:30 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 09:56:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:30 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 09:56:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:30 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 09:56:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:30 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 09:56:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:30 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 09:56:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:31 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 09:56:31 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:31 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:31 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 09:56:31 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:31 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:31 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 09:56:31 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:56:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:56:31 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:56:31 --> You are not login yet.
+DEBUG - 2014-10-30 09:56:31 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 09:56:31 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 09:57:07 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 09:57:07 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:08 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:09 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:09 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 09:57:09 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:09 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:09 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 09:57:09 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:09 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:09 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 09:57:09 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:09 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:09 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 09:57:09 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:09 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:09 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 09:57:09 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:09 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:10 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:10 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 09:57:10 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:10 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:10 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 09:57:10 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:10 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:10 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 09:57:10 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:10 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:10 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 09:57:10 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:10 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:10 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:10 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 09:57:10 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 09:57:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 09:57:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:29 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:29 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 09:57:29 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:29 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:29 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 09:57:29 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:29 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:29 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 09:57:29 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:29 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:30 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 09:57:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:30 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 09:57:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:30 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 09:57:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:30 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 09:57:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:30 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:30 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 09:57:30 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:30 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:31 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:31 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:31 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 09:57:31 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:57:31 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:57:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:57:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:57:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:57:31 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:57:31 --> You are not login yet.
+DEBUG - 2014-10-30 09:57:31 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 09:57:31 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 09:59:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 09:59:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:20 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:20 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:20 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:20 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:20 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:20 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:20 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 09:59:20 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:21 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:21 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 09:59:21 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:21 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:21 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 09:59:21 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:21 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:21 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 09:59:21 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:21 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:21 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 09:59:21 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:21 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:21 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:21 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 09:59:21 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:22 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:22 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 09:59:22 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:22 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:22 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 09:59:22 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:22 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:22 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 09:59:22 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 09:59:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 09:59:22 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 09:59:22 --> You are not login yet.
+DEBUG - 2014-10-30 09:59:22 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 09:59:22 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 10:01:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2014-10-30 10:01:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:37 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:37 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:37 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:37 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:37 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:37 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 10:01:37 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:37 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:37 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:37 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:37 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:38 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:38 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 10:01:38 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:38 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:38 --> Username inputted now is "nhat123"
+DEBUG - 2014-10-30 10:01:38 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:38 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:38 --> Username inputted now is "utest2"
+DEBUG - 2014-10-30 10:01:38 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:38 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:38 --> Username inputted now is "anna231"
+DEBUG - 2014-10-30 10:01:38 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:38 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:38 --> Username inputted now is "example57"
+DEBUG - 2014-10-30 10:01:38 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:38 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:38 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:38 --> Username inputted now is "firstlove123"
+DEBUG - 2014-10-30 10:01:39 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:39 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:39 --> Username inputted now is "shinichi"
+DEBUG - 2014-10-30 10:01:39 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:39 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:39 --> Username inputted now is "tuan_pham123"
+DEBUG - 2014-10-30 10:01:39 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request_Curl::__construct - Creating a new CURL Request with URI = "http://localhost/test-blog/user"
+WARNING - 2014-10-30 10:01:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:01:39 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:01:39 --> You are not login yet.
+DEBUG - 2014-10-30 10:01:39 --> Username inputted now is "loc"
+DEBUG - 2014-10-30 10:01:39 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 10:03:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:03:14 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:03:14 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:03:14 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:03:14 --> You are not login yet.
+WARNING - 2014-10-30 10:03:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:03:25 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:03:25 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:03:25 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:03:25 --> You are not login yet.
+DEBUG - 2014-10-30 10:03:25 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 10:03:25 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 10:03:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:03:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:03:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:03:26 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:03:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:03:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:03:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:03:31 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:03:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:03:32 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:03:32 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:03:32 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:03:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:03:49 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:03:49 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:03:49 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:05:04 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:05:04 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 10:05:04 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:05:04 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 10:05:04 --> ID of comment to edit now = 6
+WARNING - 2014-10-30 10:16:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:16:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:16:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:16:26 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2014-10-30 10:16:27 --> User21 logged out. Token of user21 was deleted in database and session
+WARNING - 2014-10-30 10:16:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:16:28 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:16:28 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:16:28 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:16:28 --> You are not login yet.
+WARNING - 2014-10-30 10:16:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:16:29 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:16:29 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:16:29 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:16:29 --> You are not login yet.
+WARNING - 2014-10-30 10:16:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:16:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:16:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:16:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:16:30 --> You are not login yet.
+WARNING - 2014-10-30 10:31:57 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:31:57 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:31:57 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:31:57 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:31:57 --> You are not login yet.
+DEBUG - 2014-10-30 10:31:57 --> Username inputted now is "richard"
+DEBUG - 2014-10-30 10:31:57 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 10:32:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:32:54 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:32:54 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:32:54 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:32:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:32:58 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:32:58 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:32:58 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:32:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:32:59 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:32:59 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:32:59 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:33:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:02 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:02 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:02 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:33:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:03 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:33:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:13 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:13 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:13 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 10:33:14 --> ID of user now is: 20
+WARNING - 2014-10-30 10:33:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:21 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:21 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:21 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:33:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:25 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:25 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:25 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 10:33:25 --> ID of user now is: 20
+WARNING - 2014-10-30 10:33:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:30 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 10:33:30 --> ID of user now is: 12
+ERROR - 2014-10-30 10:33:30 --> Get information of user failed. Because ID of user was not found in user table
+WARNING - 2014-10-30 10:33:34 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:34 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:34 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:34 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 10:33:34 --> ID of user now is: 3
+WARNING - 2014-10-30 10:33:55 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:55 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:55 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:55 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 10:33:56 --> ID of user now is: 3
+WARNING - 2014-10-30 10:33:57 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:33:57 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:33:57 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:33:57 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 10:33:57 --> ID of user now is: 3
+WARNING - 2014-10-30 10:34:16 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:34:16 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:34:16 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:34:16 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:34:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:34:32 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:34:32 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:34:32 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 10:34:32 --> ID of user now is: 3
+WARNING - 2014-10-30 10:35:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:35:24 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:35:24 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:35:24 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:35:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:35:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:35:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:35:30 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:35:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:35:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:35:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:35:31 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:36:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:36:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:36:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:36:22 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 10:36:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:36:28 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:36:28 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:36:28 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2014-10-30 10:36:28 --> User22 logged out. Token of user22 was deleted in database and session
+WARNING - 2014-10-30 10:36:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:36:29 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:36:29 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:36:29 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:36:29 --> You are not login yet.
+WARNING - 2014-10-30 10:36:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:36:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-10-30 10:36:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:36:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:36:30 --> You are not login yet.
+WARNING - 2014-10-30 10:36:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:36:42 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_edit"
+INFO - 2014-10-30 10:36:42 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:36:42 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:36:42 --> You are not login yet.
+WARNING - 2014-10-30 10:53:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:53:09 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:53:09 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:53:09 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:53:10 --> You are not login yet.
+DEBUG - 2014-10-30 10:53:10 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:53:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:53:10 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:53:10 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:53:10 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:53:10 --> You are not login yet.
+DEBUG - 2014-10-30 10:53:10 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:53:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:53:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:53:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:53:30 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:53:31 --> You are not login yet.
+DEBUG - 2014-10-30 10:53:31 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:53:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:53:35 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:53:35 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:53:35 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:53:35 --> You are not login yet.
+DEBUG - 2014-10-30 10:53:35 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:53:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:53:36 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:53:36 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:53:36 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:53:36 --> You are not login yet.
+DEBUG - 2014-10-30 10:53:36 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:53:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:53:36 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:53:36 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:53:36 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:53:36 --> You are not login yet.
+DEBUG - 2014-10-30 10:53:36 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:54:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:54:01 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:54:01 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:54:01 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:54:01 --> You are not login yet.
+DEBUG - 2014-10-30 10:54:01 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:54:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:54:03 --> You are not login yet.
+DEBUG - 2014-10-30 10:54:03 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:54:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:54:03 --> You are not login yet.
+DEBUG - 2014-10-30 10:54:03 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:54:03 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:54:03 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:54:03 --> You are not login yet.
+DEBUG - 2014-10-30 10:54:03 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:55:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:55:58 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:55:58 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:55:58 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:55:58 --> You are not login yet.
+DEBUG - 2014-10-30 10:55:58 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:56:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:56:00 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:56:00 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:56:00 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:56:00 --> You are not login yet.
+DEBUG - 2014-10-30 10:56:00 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:56:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:56:01 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:56:01 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:56:01 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:56:01 --> You are not login yet.
+DEBUG - 2014-10-30 10:56:01 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:56:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:56:01 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:56:01 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:56:01 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:56:01 --> You are not login yet.
+DEBUG - 2014-10-30 10:56:01 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 10:56:33 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:56:33 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:56:33 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:56:33 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:56:33 --> You are not login yet.
+WARNING - 2014-10-30 10:56:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:56:50 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:56:50 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:56:50 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:56:50 --> You are not login yet.
+WARNING - 2014-10-30 10:56:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:56:50 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:56:50 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:56:50 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:56:50 --> You are not login yet.
+WARNING - 2014-10-30 10:56:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:56:51 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:56:51 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:56:51 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:56:51 --> You are not login yet.
+WARNING - 2014-10-30 10:59:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:59:11 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-10-30 10:59:11 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:59:11 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-10-30 10:59:11 --> You are not login yet.
+DEBUG - 2014-10-30 10:59:11 --> Username inputted now is "albert"
+DEBUG - 2014-10-30 10:59:11 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-10-30 10:59:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 10:59:50 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 10:59:50 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 10:59:50 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 11:00:12 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:12 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:12 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:12 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:12 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 11:00:33 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:33 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:33 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:33 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:33 --> Inputted title of post now is: "sample title"
+DEBUG - 2014-10-30 11:00:33 --> Inputted content of post now is: "sample content"
+WARNING - 2014-10-30 11:00:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:35 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:35 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:35 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:35 --> Inputted title of post now is: "sample title"
+DEBUG - 2014-10-30 11:00:35 --> Inputted content of post now is: "sample content"
+ERROR - 2014-10-30 11:00:35 --> Create post failed because there is an existed post in database
+WARNING - 2014-10-30 11:00:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:36 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:36 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:36 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:36 --> Inputted title of post now is: "sample title"
+DEBUG - 2014-10-30 11:00:36 --> Inputted content of post now is: "sample content"
+ERROR - 2014-10-30 11:00:36 --> Create post failed because there is an existed post in database
+WARNING - 2014-10-30 11:00:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:37 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:37 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:37 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:37 --> Inputted title of post now is: "sample title"
+DEBUG - 2014-10-30 11:00:37 --> Inputted content of post now is: "sample content"
+ERROR - 2014-10-30 11:00:37 --> Create post failed because there is an existed post in database
+WARNING - 2014-10-30 11:00:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:56 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:56 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:56 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:56 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 11:00:57 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:57 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 11:00:57 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:57 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 11:00:57 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:57 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:57 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 11:00:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:58 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:58 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:58 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:58 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 11:00:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:00:58 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:00:58 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:00:58 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:00:58 --> You cannot create post because of invalid token
+WARNING - 2014-10-30 11:01:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:01:02 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:01:02 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:01:02 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:01:02 --> Inputted title of post now is: "sample title"
+DEBUG - 2014-10-30 11:01:02 --> Inputted content of post now is: "sample content"
+ERROR - 2014-10-30 11:01:02 --> Create post failed because there is an existed post in database
+WARNING - 2014-10-30 11:01:02 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:01:02 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post"
+INFO - 2014-10-30 11:01:02 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:01:02 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:01:02 --> Inputted title of post now is: "sample title"
+DEBUG - 2014-10-30 11:01:02 --> Inputted content of post now is: "sample content"
+ERROR - 2014-10-30 11:01:02 --> Create post failed because there is an existed post in database
+WARNING - 2014-10-30 11:01:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:01:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-30 11:01:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:01:22 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:01:22 --> You cannot edit this post because of invalid token
+WARNING - 2014-10-30 11:01:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:01:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-30 11:01:27 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:01:27 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:01:28 --> Inputted ID of post edited now = 4
+WARNING - 2014-10-30 11:01:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:01:35 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_edit"
+INFO - 2014-10-30 11:01:35 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:01:35 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:01:36 --> Inputted ID of post edited now = 24
+WARNING - 2014-10-30 11:01:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:01:49 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-30 11:01:49 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:01:49 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 11:01:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:01:54 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-30 11:01:54 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:01:54 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:01:54 --> You cannot delete post because of invalid token
+WARNING - 2014-10-30 11:01:55 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:01:55 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-30 11:01:55 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:01:55 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:01:55 --> You cannot delete post because of invalid token
+WARNING - 2014-10-30 11:02:01 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:02:01 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-30 11:02:01 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:02:01 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:02:01 --> You cannot delete post because of invalid token
+WARNING - 2014-10-30 11:02:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:02:06 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-30 11:02:06 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:02:06 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:02:06 --> Inputted ID of post deleted now = 24
+WARNING - 2014-10-30 11:02:07 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:02:07 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-30 11:02:07 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:02:07 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:02:07 --> Inputted ID of post deleted now = 24
+ERROR - 2014-10-30 11:02:07 --> Delete post fail because the post was not found
+WARNING - 2014-10-30 11:02:33 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:02:33 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-30 11:02:33 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:02:33 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:02:33 --> You cannot get posts because of invalid token
+WARNING - 2014-10-30 11:02:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:02:39 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-30 11:02:39 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:02:39 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:02:39 --> Inputted ID of user now = 2
+WARNING - 2014-10-30 11:02:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:02:42 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-30 11:02:42 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:02:42 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:02:42 --> Inputted ID of user now = 4
+WARNING - 2014-10-30 11:02:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:02:47 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "posts"
+INFO - 2014-10-30 11:02:47 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:02:47 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:02:47 --> You cannot get posts because of invalid token
+WARNING - 2014-10-30 11:04:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:04:18 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-30 11:04:18 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:04:18 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:04:18 --> Inputted ID of post deleted now = 0
+DEBUG - 2014-10-30 11:04:18 --> Delete post failed because ID of post is invalid
+WARNING - 2014-10-30 11:04:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:04:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "post_delete"
+INFO - 2014-10-30 11:04:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:04:22 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:04:22 --> Inputted ID of post deleted now = 45
+ERROR - 2014-10-30 11:04:22 --> Delete post fail because the post was not found
+WARNING - 2014-10-30 11:11:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:11:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment"
+INFO - 2014-10-30 11:11:27 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:11:27 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:11:27 --> ID of post commented now = 19
+DEBUG - 2014-10-30 11:11:27 --> Content of comment now: 
+DEBUG - 2014-10-30 11:11:27 --> Add comment failed because of invalid input
+WARNING - 2014-10-30 11:11:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:11:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment"
+INFO - 2014-10-30 11:11:28 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:11:28 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:11:28 --> ID of post commented now = 19
+DEBUG - 2014-10-30 11:11:28 --> Content of comment now: 
+DEBUG - 2014-10-30 11:11:28 --> Add comment failed because of invalid input
+WARNING - 2014-10-30 11:11:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:11:43 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment"
+INFO - 2014-10-30 11:11:43 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:11:43 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:11:43 --> ID of post commented now = 19
+DEBUG - 2014-10-30 11:11:43 --> Content of comment now: No problem.
+WARNING - 2014-10-30 11:11:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:11:44 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment"
+INFO - 2014-10-30 11:11:44 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:11:44 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:11:44 --> ID of post commented now = 19
+DEBUG - 2014-10-30 11:11:44 --> Content of comment now: No problem.
+ERROR - 2014-10-30 11:11:44 --> Add a comment failed because comment for this post existed
+WARNING - 2014-10-30 11:12:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:12:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 11:12:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:12:31 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 11:12:35 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:12:35 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 11:12:35 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:12:35 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:12:35 --> You cannot edit this comment because of invalid token
+WARNING - 2014-10-30 11:12:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:12:38 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 11:12:38 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:12:38 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:12:39 --> ID of comment to edit now = 24
+WARNING - 2014-10-30 11:12:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:12:54 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 11:12:54 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:12:54 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:12:54 --> ID of comment to edit now = 24
+WARNING - 2014-10-30 11:12:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:12:56 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 11:12:56 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:12:56 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:12:56 --> ID of comment to edit now = 24
+WARNING - 2014-10-30 11:13:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:13:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_delete"
+INFO - 2014-10-30 11:13:26 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:13:26 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-10-30 11:13:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:13:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_delete"
+INFO - 2014-10-30 11:13:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:13:30 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:13:30 --> You cannot delete this comment because of invalid token
+WARNING - 2014-10-30 11:13:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:13:38 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_delete"
+INFO - 2014-10-30 11:13:38 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:13:38 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:13:38 --> ID of comment to delete now = 34344
+ERROR - 2014-10-30 11:13:38 --> Deleting comment failed because the comment was not found
+WARNING - 2014-10-30 11:13:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:13:41 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_delete"
+INFO - 2014-10-30 11:13:41 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:13:41 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:13:41 --> ID of comment to delete now = 0
+DEBUG - 2014-10-30 11:13:41 --> Deleting comment failed because ID of comment is invalid
+WARNING - 2014-10-30 11:13:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:13:44 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_delete"
+INFO - 2014-10-30 11:13:44 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:13:44 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:13:44 --> ID of comment to delete now = 24
+WARNING - 2014-10-30 11:13:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:13:45 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_delete"
+INFO - 2014-10-30 11:13:45 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:13:45 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:13:45 --> ID of comment to delete now = 24
+ERROR - 2014-10-30 11:13:45 --> Deleting comment failed because the comment was not found
+WARNING - 2014-10-30 11:14:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:14:18 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-30 11:14:18 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:14:18 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:14:18 --> ID of specified post now = 4
+WARNING - 2014-10-30 11:14:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:14:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-30 11:14:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:14:22 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:14:22 --> You cannot get comments because of invalid token
+WARNING - 2014-10-30 11:14:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:14:28 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-30 11:14:28 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:14:28 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:14:28 --> ID of specified post now = 0
+DEBUG - 2014-10-30 11:14:28 --> Get comments of specified post failed because of invalid input
+WARNING - 2014-10-30 11:14:32 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:14:32 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comments"
+INFO - 2014-10-30 11:14:32 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:14:32 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:14:32 --> ID of specified post now = 33333
+ERROR - 2014-10-30 11:14:32 --> Get comments of specified post failed because this post was not found in database
+WARNING - 2014-10-30 11:16:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:16:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 11:16:46 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:16:46 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:16:46 --> ID of comment to edit now = 24
+ERROR - 2014-10-30 11:16:46 --> Edit comment failed because this comment was not found
+WARNING - 2014-10-30 11:16:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:16:49 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 11:16:49 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:16:49 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:16:49 --> ID of comment to edit now = 12
+WARNING - 2014-10-30 11:22:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-10-30 11:22:25 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "comment_edit"
+INFO - 2014-10-30 11:22:25 --> Fuel\Core\Request::execute - Called
+INFO - 2014-10-30 11:22:25 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-10-30 11:22:25 --> You cannot edit this comment because of invalid token

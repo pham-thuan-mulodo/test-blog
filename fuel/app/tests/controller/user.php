@@ -34,11 +34,12 @@ class Test_Controller_User extends TestCase {
         $response       = $curl->response();
         // Convert json response to array
         $arr_msg        = json_decode($response, true);
-        
+        $tokens[] = $arr_msg['token'];
         // Get API Response code
         $status_actual  = $arr_msg['message']['code'];
         $status_expected= 200;
         $this->assertEquals($status_expected, $status_actual);
+        return $tokens;
     }
     
     /**
@@ -49,7 +50,7 @@ class Test_Controller_User extends TestCase {
      * @param string $password Password of user to test
      * @param string $username Username of user to test
      */
-    public function test_post_register($email, $password, $username) {
+    /*public function test_post_register($email, $password, $username) {
         $curl   = Request::forge('http://localhost/test-blog/user_register', 'curl');
         $curl->set_method('post');
         $user_info  = array(
@@ -68,16 +69,6 @@ class Test_Controller_User extends TestCase {
         $status_actual  = $arr_msg['message']['code'];
         $status_expected= 200;
         $this->assertEquals($status_expected, $status_actual);
-    }
-    
-    /**
-     * @depends test_post_login
-     */
-    /*public function test_post_logout() { 
-        $curl   = Request::forge('http://localhost/test-blog/user_logout', 'curl');
-        $curl->set_method('post');
-        $curl->execute();
-        echo $curl->response();exit;
     }*/
     
     public function login_provider() {
@@ -101,5 +92,20 @@ class Test_Controller_User extends TestCase {
 //            array('andrew@mulodo.com', '456', 'andrew45'),
         );
     }
+    
+    /**
+     * @depends test_post_login
+     */
+    /*public function test_post_logout($tokens) { 
+        if(isset($tokens)) {
+            $curl   = Request::forge('http://localhost/test-blog/user_logout', 'curl');
+            $curl->set_method('post');
+            $curl->execute();
+            echo $curl->response();exit;
+        }
+        else {
+            echo 'Failfggg';
+        }
+    }*/
 }
 

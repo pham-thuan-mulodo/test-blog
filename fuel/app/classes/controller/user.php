@@ -111,7 +111,9 @@ class Controller_User extends Controller_Rest
      */
     public function post_logout() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token      = Input::post('token');
+        $sstoken    = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             // Delete token in database
             $arr_auth   = Auth::instance()->get_user_id();
@@ -132,10 +134,11 @@ class Controller_User extends Controller_Rest
         } 
         else 
         {
+            Log::debug('You cannot logout because invalid token');
             return $this->response(array(
                 'message' => array(
-                    'code' => 10301,
-                    'text' => 'Please login'
+                    'code' => 10303,
+                    'text' => 'Permission denied'
                 ),
                 'data'    => null
             ));
@@ -206,8 +209,10 @@ class Controller_User extends Controller_Rest
      * @return mixed[] Content of API response
      */
     public function put_edit() 
-    {
-        if (Auth::check() && !empty(Session::get('token'))) 
+    {   
+        $token      = Input::put('token');
+        $sstoken    = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             $user_id    = (int)Input::put('id');
             Log::debug('ID of user now is: '.$user_id);
@@ -276,6 +281,17 @@ class Controller_User extends Controller_Rest
                     )
                 ));
             }
+        }
+        else 
+        {
+            Log::debug('You cannot edit user because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
         }
     }
 }

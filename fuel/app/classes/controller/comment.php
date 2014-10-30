@@ -56,7 +56,9 @@ class Controller_Comment extends Controller_Rest
      */
     public function post_add() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token = Input::post('token');
+        $sstoken = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             // get id of author
             $arr_auth   = Auth::instance()->get_user_id();
@@ -115,6 +117,17 @@ class Controller_Comment extends Controller_Rest
                 ));
             }
         }
+        else
+        {
+            Log::debug('You cannot add comment because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
+        }
     }
     
     /**
@@ -125,7 +138,9 @@ class Controller_Comment extends Controller_Rest
      */
     public function delete_remove() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token = Input::delete('token');
+        $sstoken = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             $comm_id = (int)Input::delete('id');
             Log::debug('ID of comment to delete now = '.$comm_id);
@@ -153,6 +168,17 @@ class Controller_Comment extends Controller_Rest
                 ));
             }
         }
+        else
+        {
+            Log::debug('You cannot delete this comment because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
+        }
     }
     
     /**
@@ -163,7 +189,9 @@ class Controller_Comment extends Controller_Rest
      */
     public function get_show() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token = Input::get('token');
+        $sstoken = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             // Check input is valid or invalid
             $post_id    = (int)Input::get('post_id');
@@ -216,6 +244,17 @@ class Controller_Comment extends Controller_Rest
                 ));
             }
         }
+        else
+        {
+            Log::debug('You cannot get comments because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
+        }
     }
     
     /**
@@ -226,7 +265,9 @@ class Controller_Comment extends Controller_Rest
      */
     public function put_edit() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token = Input::put('token');
+        $sstoken = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             // Check input is valid or invalid
             $comm_id    =  (int)Input::put('id');
@@ -303,6 +344,17 @@ class Controller_Comment extends Controller_Rest
                     ));
                 }
             }
+        }
+        else
+        {
+            Log::debug('You cannot edit this comment because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
         }
     }
 }

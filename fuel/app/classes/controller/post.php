@@ -56,7 +56,9 @@ class Controller_Post extends Controller_Rest
      */
     public function post_create() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token      = Input::post('token');
+        $sstoken    = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             // get id of author
             $arr_auth   = Auth::instance()->get_user_id();
@@ -102,6 +104,17 @@ class Controller_Post extends Controller_Rest
                 ));
             }
         }
+        else 
+        {
+            Log::debug('You cannot create post because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
+        }
     }
     
     /**
@@ -112,7 +125,9 @@ class Controller_Post extends Controller_Rest
      */
     public function delete_delete() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token      = Input::delete('token');
+        $sstoken    = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             $post_id    = (int)Input::delete('id');
             Log::debug('Inputted ID of post deleted now = '.$post_id);
@@ -141,6 +156,17 @@ class Controller_Post extends Controller_Rest
                 ));
             }
         }
+        else
+        {
+            Log::debug('You cannot delete post because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
+        }
     }
     
     /**
@@ -151,7 +177,9 @@ class Controller_Post extends Controller_Rest
      */
     public function put_edit() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token      = Input::put('token');
+        $sstoken    = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             // Check input is valid or invalid
             $post_id    = (int)Input::put('id');
@@ -235,6 +263,17 @@ class Controller_Post extends Controller_Rest
                 }
             }
         }
+        else 
+        {
+            Log::debug('You cannot edit this post because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
+        }
     }
     
     /**
@@ -245,7 +284,9 @@ class Controller_Post extends Controller_Rest
      */
     public function get_show() 
     {
-        if (Auth::check() && !empty(Session::get('token'))) 
+        $token      = Input::get('token');
+        $sstoken    = Session::get('token');
+        if (Auth::check() && $token == $sstoken) 
         {
             // Check input is valid or invalid
             $author_id  = (int)Input::get('author_id');
@@ -299,6 +340,17 @@ class Controller_Post extends Controller_Rest
                     'data' => null
                 ));
             }
+        }
+        else
+        {
+            Log::debug('You cannot get posts because of invalid token');
+            return $this->response(array(
+                'message' => array(
+                    'code' => 10303,
+                    'text' => 'Permission denied'
+                ),
+                'data' => null
+            ));
         }
     }
 }
