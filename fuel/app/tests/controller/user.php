@@ -34,12 +34,10 @@ class Test_Controller_User extends TestCase {
         $response       = $curl->response();
         // Convert json response to array
         $arr_msg        = json_decode($response, true);
-        $tokens[] = $arr_msg['token'];
         // Get API Response code
         $status_actual  = $arr_msg['message']['code'];
         $status_expected= 200;
         $this->assertEquals($status_expected, $status_actual);
-        return $tokens;
     }
     
     /**
@@ -96,7 +94,8 @@ class Test_Controller_User extends TestCase {
     /**
      * @depends test_post_login
      */
-    /*public function test_post_logout($tokens) { 
+    public function test_post_logout($a) { 
+        echo $a;
         if(isset($tokens)) {
             $curl   = Request::forge('http://localhost/test-blog/user_logout', 'curl');
             $curl->set_method('post');
@@ -106,6 +105,6 @@ class Test_Controller_User extends TestCase {
         else {
             echo 'Failfggg';
         }
-    }*/
+    }
 }
 
