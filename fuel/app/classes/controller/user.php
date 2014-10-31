@@ -31,7 +31,7 @@ class Controller_User extends Controller_Rest
     public function before() 
     {
         parent::before();
-        if (Auth::check() && !empty(Session::get('token'))) 
+        if (Auth::check()) 
         {
             echo '';
         } 
@@ -111,19 +111,19 @@ class Controller_User extends Controller_Rest
      */
     public function post_logout() 
     {
+        $arr_auth   = Auth::instance()->get_user_id();
+        $user_id    = $arr_auth[1];
+        $user       = new User();
         $token      = Input::post('token');
-        $sstoken    = Session::get('token');
-        if (Auth::check() && $token == $sstoken) 
+        $user_token = $user->get_token_user($user_id);
+        $sstoken    = $user_token['login_hash'];
+        if ($token == Session::get('token')) 
         {
             // Delete token in database
-            $arr_auth   = Auth::instance()->get_user_id();
-            $user_id    = $arr_auth[1];
-            $user       = new User();
             $user->delete_token($user_id);
             Log::info('User'.$user_id.' logged out. Token of user'.$user_id.' was deleted in database and session');
 
             Auth::logout();
-            Session::destroy();
             return $this->response(array(
                 'message' => array(
                     'code' => 200,
@@ -210,9 +210,13 @@ class Controller_User extends Controller_Rest
      */
     public function put_edit() 
     {   
+        $arr_auth   = Auth::instance()->get_user_id();
+        $user_id    = $arr_auth[1];
+        $user       = new User();
         $token      = Input::put('token');
-        $sstoken    = Session::get('token');
-        if (Auth::check() && $token == $sstoken) 
+        $user_token = $user->get_token_user($user_id);
+        $sstoken    = $user_token['login_hash'];
+        if (!empty($token) && $token == $sstoken) 
         {
             $user_id    = (int)Input::put('id');
             Log::debug('ID of user now is: '.$user_id);

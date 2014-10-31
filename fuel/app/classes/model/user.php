@@ -121,7 +121,9 @@ class User extends \Orm\Model
             $entry  = User::find($user_id);
             $entry->set($data);
             $entry->save();
-        } catch (Exception $ex) {
+        } 
+        catch (Exception $ex) 
+        {
             Log::error($ex->getMessage());
         }
     }
@@ -138,6 +140,18 @@ class User extends \Orm\Model
             $entry              = User::find($user_id);
             $entry->login_hash  = '';
             $entry->save();
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
+    }
+    
+    public function get_token_user($user_id) {
+        try
+        {
+            $entry = User::find($user_id);
+            return $entry;
         } 
         catch (Exception $ex) 
         {

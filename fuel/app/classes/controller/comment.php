@@ -7,6 +7,7 @@ use Fuel\Core\Input;
 use Fuel\Core\Security;
 use Model\Comment;
 use Fuel\Core\Log;
+use Model\User;
 
 /**
  * Controller_Comment Controller class for comment endpoint. This class contains all API methods related comment.
@@ -31,7 +32,7 @@ class Controller_Comment extends Controller_Rest
     public function before() 
     {
         parent::before();
-        if (Auth::check() && !empty(Session::get('token'))) 
+        if (Auth::check()) 
         {
             echo '';
         } 
@@ -56,9 +57,13 @@ class Controller_Comment extends Controller_Rest
      */
     public function post_add() 
     {
-        $token = Input::post('token');
-        $sstoken = Session::get('token');
-        if (Auth::check() && $token == $sstoken) 
+        $arr_auth   = Auth::instance()->get_user_id();
+        $user_id    = $arr_auth[1];
+        $user       = new User();
+        $token      = Input::post('token');
+        $user_token = $user->get_token_user($user_id);
+        $sstoken    = $user_token['login_hash'];
+        if (!empty($token) && $token == $sstoken) 
         {
             // get id of author
             $arr_auth   = Auth::instance()->get_user_id();
@@ -138,9 +143,13 @@ class Controller_Comment extends Controller_Rest
      */
     public function delete_remove() 
     {
-        $token = Input::delete('token');
-        $sstoken = Session::get('token');
-        if (Auth::check() && $token == $sstoken) 
+        $arr_auth   = Auth::instance()->get_user_id();
+        $user_id    = $arr_auth[1];
+        $user       = new User();
+        $token      = Input::delete('token');
+        $user_token = $user->get_token_user($user_id);
+        $sstoken    = $user_token['login_hash'];
+        if (!empty($token) && $token == $sstoken) 
         {
             $comm_id = (int)Input::delete('id');
             Log::debug('ID of comment to delete now = '.$comm_id);
@@ -189,9 +198,13 @@ class Controller_Comment extends Controller_Rest
      */
     public function get_show() 
     {
-        $token = Input::get('token');
-        $sstoken = Session::get('token');
-        if (Auth::check() && $token == $sstoken) 
+        $arr_auth   = Auth::instance()->get_user_id();
+        $user_id    = $arr_auth[1];
+        $user       = new User();
+        $token      = Input::get('token');
+        $user_token = $user->get_token_user($user_id);
+        $sstoken    = $user_token['login_hash'];
+        if (!empty($token) && $token == $sstoken) 
         {
             // Check input is valid or invalid
             $post_id    = (int)Input::get('post_id');
@@ -265,9 +278,13 @@ class Controller_Comment extends Controller_Rest
      */
     public function put_edit() 
     {
-        $token = Input::put('token');
-        $sstoken = Session::get('token');
-        if (Auth::check() && $token == $sstoken) 
+        $arr_auth   = Auth::instance()->get_user_id();
+        $user_id    = $arr_auth[1];
+        $user       = new User();
+        $token      = Input::put('token');
+        $user_token = $user->get_token_user($user_id);
+        $sstoken    = $user_token['login_hash'];
+        if (!empty($token) && $token == $sstoken) 
         {
             // Check input is valid or invalid
             $comm_id    =  (int)Input::put('id');
