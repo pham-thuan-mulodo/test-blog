@@ -190,7 +190,7 @@ return array(
 		// Number of seconds before the cookie expires
 		// 'expiration'  => 0,
 		// Restrict the path that the cookie is available to
-		// 'path'        => '/',
+		 'path'        => '/test-blog/cookie',
 		// Restrict the domain that the cookie is available to
 		// 'domain'      => null,
 		// Only transmit cookies over secure connections

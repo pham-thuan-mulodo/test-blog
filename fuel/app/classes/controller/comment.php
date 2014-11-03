@@ -57,17 +57,20 @@ class Controller_Comment extends Controller_Rest
      */
     public function post_add() 
     {
-        $arr_auth   = Auth::instance()->get_user_id();
-        $user_id    = $arr_auth[1];
-        $user       = new User();
         $token      = Input::post('token');
-        $user_token = $user->get_token_user($user_id);
-        $sstoken    = $user_token['login_hash'];
-        if (!empty($token) && $token == $sstoken) 
+        $user = new User();
+        $user_info = $user->check_token_exist($token);
+        $token_db = '';
+        foreach($user_info as $item)
+        {
+            $token_db = $item['login_hash'];
+            $user_id = $item['id'];
+        }
+        
+        if (!empty($token) && $token == $token_db) 
         {
             // get id of author
-            $arr_auth   = Auth::instance()->get_user_id();
-            $author_id  = $arr_auth[1];
+            $author_id = $user_id;
             // get inputs
             $post_id    = (int) Input::post('post_id');
             $content    = htmlspecialchars_decode(Security::strip_tags(Security::xss_clean(Input::post('content'))), ENT_QUOTES);
@@ -143,13 +146,16 @@ class Controller_Comment extends Controller_Rest
      */
     public function delete_remove() 
     {
-        $arr_auth   = Auth::instance()->get_user_id();
-        $user_id    = $arr_auth[1];
-        $user       = new User();
         $token      = Input::delete('token');
-        $user_token = $user->get_token_user($user_id);
-        $sstoken    = $user_token['login_hash'];
-        if (!empty($token) && $token == $sstoken) 
+        $user = new User();
+        $user_info = $user->check_token_exist($token);
+        $token_db = '';
+        foreach($user_info as $item)
+        {
+            $token_db = $item['login_hash'];
+        }
+        
+        if (!empty($token) && $token == $token_db) 
         {
             $comm_id = (int)Input::delete('id');
             Log::debug('ID of comment to delete now = '.$comm_id);
@@ -198,13 +204,16 @@ class Controller_Comment extends Controller_Rest
      */
     public function get_show() 
     {
-        $arr_auth   = Auth::instance()->get_user_id();
-        $user_id    = $arr_auth[1];
-        $user       = new User();
         $token      = Input::get('token');
-        $user_token = $user->get_token_user($user_id);
-        $sstoken    = $user_token['login_hash'];
-        if (!empty($token) && $token == $sstoken) 
+        $user = new User();
+        $user_info = $user->check_token_exist($token);
+        $token_db = '';
+        foreach($user_info as $item)
+        {
+            $token_db = $item['login_hash'];
+        }
+        
+        if (!empty($token) && $token == $token_db) 
         {
             // Check input is valid or invalid
             $post_id    = (int)Input::get('post_id');
@@ -278,13 +287,17 @@ class Controller_Comment extends Controller_Rest
      */
     public function put_edit() 
     {
-        $arr_auth   = Auth::instance()->get_user_id();
-        $user_id    = $arr_auth[1];
-        $user       = new User();
         $token      = Input::put('token');
-        $user_token = $user->get_token_user($user_id);
-        $sstoken    = $user_token['login_hash'];
-        if (!empty($token) && $token == $sstoken) 
+        $user = new User();
+        $user_info = $user->check_token_exist($token);
+        $token_db = '';
+        foreach($user_info as $item)
+        {
+            $token_db = $item['login_hash'];
+            $user_id = $item['id'];
+        }
+        
+        if (!empty($token) && $token == $token_db) 
         {
             // Check input is valid or invalid
             $comm_id    =  (int)Input::put('id');

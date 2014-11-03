@@ -7,6 +7,7 @@ use Fuel\Core\Controller_Rest;
 use Fuel\Core\Security;
 use Auth\Auth;
 use Fuel\Core\Log;
+use Fuel\Core\Cookie;
 
 /**
  * Controller_User Controller class for user endpoint. This class contains all API methods related user.
@@ -75,11 +76,17 @@ class Controller_User extends Controller_Rest
         Log::debug('Password inputted now is "'.Auth::instance()->hash_password($pass).'"');
         if (Input::method() == 'POST') 
         {
-            if (Auth::login($username, $pass)) 
+            $token = '';
+            if (Auth::login($username, $pass) || empty($token)) 
             {
                 // create token
                 $token  = Auth::get('login_hash');
                 Session::set('token', $token);
+                Session::set('user_id', Auth::get('id'));
+                Session::set('username', Auth::get('username'));
+                Cookie::set('token', $token, 60*60*24);
+                Cookie::set('user_id', Auth::get('id'), 60*60*24);
+                Cookie::set('username', Auth::get('username'), 60*60*24);
                 return $this->response(array(
                     'message' => array(
                         'code' => 200,
@@ -111,14 +118,22 @@ class Controller_User extends Controller_Rest
      */
     public function post_logout() 
     {
-        $arr_auth   = Auth::instance()->get_user_id();
-        $user_id    = $arr_auth[1];
-        $user       = new User();
-        $token      = Input::post('token');
-        $user_token = $user->get_token_user($user_id);
-        $sstoken    = $user_token['login_hash'];
-        if ($token == Session::get('token')) 
+        $token      = Security::strip_tags(Security::xss_clean(Input::post('token')));
+        $user = new User();
+        $user_info = $user->check_token_exist($token);
+        $token_db = '';
+        foreach($user_info as $item)
         {
+            $token_db = $item['login_hash'];
+            $user_id = $item['id'];
+        }
+
+        if (!empty($token) && $token == $token_db) 
+        {
+            // Delete cookie
+            Cookie::delete('token');
+            // Delete session
+            Session::delete('token');
             // Delete token in database
             $user->delete_token($user_id);
             Log::info('User'.$user_id.' logged out. Token of user'.$user_id.' was deleted in database and session');
@@ -161,7 +176,6 @@ class Controller_User extends Controller_Rest
         Log::debug('Inputted Email: "'.$email.'"');
         Log::debug('Inputted pass: "'.$pass.'"');
         Log::debug('Inputted Username: "'.$username.'"');
-        
         // check email format
         $result     = filter_var($email, FILTER_VALIDATE_EMAIL);
         if (!empty($email) && !empty($pass) && !empty($username) && !is_bool($result)) 
@@ -210,13 +224,16 @@ class Controller_User extends Controller_Rest
      */
     public function put_edit() 
     {   
-        $arr_auth   = Auth::instance()->get_user_id();
-        $user_id    = $arr_auth[1];
-        $user       = new User();
         $token      = Input::put('token');
-        $user_token = $user->get_token_user($user_id);
-        $sstoken    = $user_token['login_hash'];
-        if (!empty($token) && $token == $sstoken) 
+        $user = new User();
+        $user_info = $user->check_token_exist($token);
+        $token_db = '';
+        foreach($user_info as $item)
+        {
+            $token_db = $item['login_hash'];
+        }
+
+        if (!empty($token) && $token == $token_db) 
         {
             $user_id    = (int)Input::put('id');
             Log::debug('ID of user now is: '.$user_id);

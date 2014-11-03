@@ -158,4 +158,20 @@ class User extends \Orm\Model
             Log::error($ex->getMessage());
         }
     }
+    
+    public function check_token_exist($token) {
+        try 
+        {
+            $entry  = User::find('all', array(
+                'where' => array(
+                    array('login_hash', $token)
+                )
+            ));
+            return $entry;
+        } 
+        catch (Exception $ex) 
+        {
+            Log::error($ex->getMessage());
+        }
+    }
 }
