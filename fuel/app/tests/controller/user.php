@@ -113,13 +113,41 @@ class Test_Controller_User extends TestCase {
         $status_actual  = $arr_msg['message']['code'];
         $status_expected= 200;
         $this->assertEquals($status_expected, $status_actual);      
-        
     }
     
     public function edit_provider() {
         return array(
-            array()
+            array(29, 'first57@mulodo.com', '123', 'Xin chao cac ban'),
+            array(28, 'example@mulodo.com', '123', 'Happy, friendly, funny'),
         );
+    }
+    
+    /**
+     * @dataProvider edit_provider
+     */
+    public function test_put_edit($user_id, $email, $password, $profile) {
+        $token = $this->test_post_login('albert', '123');
+        
+        $curl   = Request::forge('http://localhost/test-blog/user_edit', 'curl');
+        $curl->set_method('put');
+        $user_info = array(
+            'token' => $token,
+            'email' => $email,
+            'password' => $password,
+            'profile_fields' => $profile,
+            'id' => $user_id
+        );
+        $curl->set_params($user_info);
+        $curl->execute();
+        // Get API Response
+        $response       = $curl->response();
+        //echo $response;exit;
+        // Convert json response to array
+        $arr_msg        = json_decode($response->body(), true);
+        // Get API Response code
+        $status_actual  = $arr_msg['message']['code'];
+        $status_expected= 10302;
+        $this->assertEquals($status_expected, $status_actual);  
     }
 }
 
