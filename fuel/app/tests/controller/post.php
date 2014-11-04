@@ -4,18 +4,23 @@ use Fuel\Core\Request;
 /**
  * @group Post
  */
-class Test_Controller_Post extends TestCase {
+class Test_Controller_Post extends TestCase 
+{
     private $user;
-    public function setUp() {
+    public function setUp() 
+    {
         parent::setUp();
         $this->user = new Test_Controller_User();
     }
     
-    public function tearDown() {
+    public function tearDown() 
+    {
         parent::tearDown();
+        unset($this->user);
     }
     
-    public function create_provider() {
+    public function create_provider() 
+    {
         return array(
             array('Test title 5', 'Sample outline testing', 'Sample Content testing'),
             array('Test title 6', '', 'This is a sample content'),
@@ -31,7 +36,8 @@ class Test_Controller_Post extends TestCase {
      * @param string $outline Outline of post to test
      * @param string $content Content of post to test
      */
-    /*public function test_post_create($title, $outline, $content) {
+    /*public function test_post_create($title, $outline, $content) 
+    {
         $token = $this->user->test_post_login('albert', '123');
         if(!empty($token))
         {
@@ -56,7 +62,8 @@ class Test_Controller_Post extends TestCase {
         }
     }*/
     
-    public function edit_post_provider() {
+    public function edit_post_provider() 
+    {
         return array(
             array(30, 'A little love', 'Make me smile', 'This is a sample content'),
             array(31, 'Little rain', 'Sample outline testing', 'Today is a beautiful day. There is a little rain.'),
@@ -72,7 +79,8 @@ class Test_Controller_Post extends TestCase {
      * @param string $outline Outline of post to test
      * @param string  $content Content of post to test
      */
-    public function test_put_edit($post_id, $title, $outline, $content) {
+    public function test_put_edit($post_id, $title, $outline, $content) 
+    {
         $token = $this->user->test_post_login('albert', '123');
         if(!empty($token))
         {
@@ -98,7 +106,8 @@ class Test_Controller_Post extends TestCase {
         }
     }
     
-    public function delete_post_provider() {
+    public function delete_post_provider() 
+    {
         return array(
             array(27),
             array(28),
@@ -111,7 +120,8 @@ class Test_Controller_Post extends TestCase {
      * @dataProvider delete_post_provider
      * @param int $post_id ID of post to test
      */
-    public function test_delete_delete($post_id) {
+    public function test_delete_delete($post_id) 
+    {
         $token = $this->user->test_post_login('albert', '123');
         if(!empty($token))
         {
@@ -134,7 +144,8 @@ class Test_Controller_Post extends TestCase {
         }
     }
     
-    public function get_post_provider() {
+    public function get_post_provider() 
+    {
         return array(
             array(2)
         );
@@ -145,7 +156,8 @@ class Test_Controller_Post extends TestCase {
      * @dataProvider get_post_provider
      * @param int $author_id ID of user to test
      */
-    public function test_get_show($author_id) {
+    public function test_get_show($author_id) 
+    {
         $token = $this->user->test_post_login('albert', '123');
         if(!empty($token))
         {
