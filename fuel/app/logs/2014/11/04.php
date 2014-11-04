@@ -6846,3 +6846,35 @@ INFO - 2014-11-04 09:53:43 --> Fuel\Core\Request::execute - Called
 INFO - 2014-11-04 09:53:43 --> Fuel\Core\Request::execute - Setting main Request
 ERROR - 2014-11-04 09:53:43 --> You are not login yet.
 INFO - 2014-11-04 09:53:43 --> User21 logged out. Token of user21 was deleted in database and session
+WARNING - 2014-11-04 10:50:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-04 10:50:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-11-04 10:50:46 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-04 10:50:46 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-11-04 10:50:46 --> You are not login yet.
+DEBUG - 2014-11-04 10:50:46 --> Username inputted now is "albert"
+DEBUG - 2014-11-04 10:50:46 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-11-04 10:51:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-04 10:51:09 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-11-04 10:51:09 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-04 10:51:09 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-11-04 10:51:09 --> You cannot logout because invalid token
+WARNING - 2014-11-04 10:51:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-04 10:51:13 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-11-04 10:51:13 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-04 10:51:13 --> Fuel\Core\Request::execute - Setting main Request
+DEBUG - 2014-11-04 10:51:13 --> You cannot logout because invalid token
+WARNING - 2014-11-04 10:51:23 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-04 10:51:23 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-11-04 10:51:23 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-04 10:51:23 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-11-04 10:51:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-04 10:51:30 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-11-04 10:51:30 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-04 10:51:30 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2014-11-04 10:51:30 --> User21 logged out. Token of user21 was deleted in database and session
+WARNING - 2014-11-04 10:51:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-04 10:51:31 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-11-04 10:51:31 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-04 10:51:31 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-11-04 10:51:31 --> You are not login yet.
+DEBUG - 2014-11-04 10:51:31 --> You cannot logout because invalid token
