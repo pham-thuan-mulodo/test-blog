@@ -198,7 +198,6 @@ class Controller_Post extends Controller_Rest
         {
             $token_db = $item['login_hash'];
         }
-        
         if (!empty($token) && $token == $token_db) 
         {
             // Check input is valid or invalid

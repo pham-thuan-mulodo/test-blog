@@ -1,23 +1,24 @@
 <?php
 use Fuel\Core\TestCase;
 use Fuel\Core\Request;
-use Model\User;
-use Fuel\Core\Session;
-use Auth\Auth;
 /**
  * @group User
  */
 
-class Test_Controller_User extends TestCase {
-    public function setUp() {
+class Test_Controller_User extends TestCase 
+{
+    public function setUp() 
+    {
         //$this->user_c = new Controller_User();
     }
     
-    public function tearDown() {
+    public function tearDown() 
+    {
         //unset($this->user_c);
     }
     
-    public function login_provider() {
+    public function login_provider() 
+    {
         return array(
             array('albert', '123'),
             array('richard', '123'),
@@ -39,7 +40,8 @@ class Test_Controller_User extends TestCase {
      * @param string $username Username of user to test
      * @param string $password Password of user to test
      */
-    public function test_post_login($username, $password) {
+    public function test_post_login($username, $password) 
+    {
         $curl       = Request::forge('http://localhost/test-blog/user', 'curl');
         $curl->set_method('post');
         $user_info  = array(
@@ -50,15 +52,12 @@ class Test_Controller_User extends TestCase {
         $curl->execute();
         // Get API Response
         $response       = $curl->response()->body();
-        //echo $response;exit;
-        //echo $response;exit;
         // Convert json response to array
         $arr_msg        = json_decode($response, true);
         // Get API Response code
         $status_actual  = $arr_msg['message']['code'];
         $status_expected= 200;
         $this->assertEquals($status_expected, $status_actual);
-        Session::set('token_test', $arr_msg['token']);
         return $arr_msg['token'];
     }
     
@@ -69,7 +68,8 @@ class Test_Controller_User extends TestCase {
      * @param string $password Password of user to test
      * @param string $username Username of user to test
      */
-    /*public function test_post_register() {
+    /*public function test_post_register() 
+    {
         $curl   = Request::forge('http://localhost/test-blog/user_register', 'curl');
         $curl->set_method('post');
         $user_info  = array(
@@ -90,64 +90,71 @@ class Test_Controller_User extends TestCase {
         $this->assertEquals($status_expected, $status_actual);
     }*/
     
-    /**
-     * 
-     */
-    public function test_post_logout() {
-        $token = $this->test_post_login('albert', '123');
-        
-        $curl   = Request::forge('http://localhost/test-blog/user_logout', 'curl');
-        $curl->set_method('post');
-        $token_info = array(
-            'token' => $token
-        );
-        $curl->set_params($token_info);
-        $curl->execute();
-
-        // Get API Response
-        $response       = $curl->response();
-        //echo $response;exit;
-        // Convert json response to array
-        $arr_msg        = json_decode($response->body(), true);
-        // Get API Response code
-        $status_actual  = $arr_msg['message']['code'];
-        $status_expected= 200;
-        $this->assertEquals($status_expected, $status_actual);      
-    }
-    
-    public function edit_provider() {
+    public function edit_provider() 
+    {
         return array(
             array(29, 'first57@mulodo.com', '123', 'Xin chao cac ban'),
-            array(28, 'example@mulodo.com', '123', 'Happy, friendly, funny'),
+            array(28, 'example_love@mulodo.com', '123', 'Happy, friendly, funny'),
         );
     }
     
     /**
      * @dataProvider edit_provider
+     * 
      */
-    public function test_put_edit($user_id, $email, $password, $profile) {
+    public function test_put_edit($user_id, $email, $password, $profile) 
+    {
         $token = $this->test_post_login('albert', '123');
-        
-        $curl   = Request::forge('http://localhost/test-blog/user_edit', 'curl');
-        $curl->set_method('put');
-        $user_info = array(
-            'token' => $token,
-            'email' => $email,
-            'password' => $password,
-            'profile_fields' => $profile,
-            'id' => $user_id
-        );
-        $curl->set_params($user_info);
-        $curl->execute();
-        // Get API Response
-        $response       = $curl->response();
-        //echo $response;exit;
-        // Convert json response to array
-        $arr_msg        = json_decode($response->body(), true);
-        // Get API Response code
-        $status_actual  = $arr_msg['message']['code'];
-        $status_expected= 10302;
-        $this->assertEquals($status_expected, $status_actual);  
+        if(!empty($token)) 
+        {
+            $curl   = Request::forge('http://localhost/test-blog/user_edit', 'curl');
+            $curl->set_method('put');
+            $user_info = array(
+                'token' => $token,
+                'email' => $email,
+                'password' => $password,
+                'profile_fields' => $profile,
+                'id' => $user_id
+            );
+            $curl->set_params($user_info);
+            $curl->execute();
+            // Get API Response
+            $response       = $curl->response();
+            //echo $response;exit;
+            // Convert json response to array
+            $arr_msg        = json_decode($response->body(), true);
+            // Get API Response code
+            $status_actual  = $arr_msg['message']['code'];
+            $status_expected= 10302;
+            $this->assertEquals($status_expected, $status_actual);  
+        }
     }
+    
+    /**
+     * 
+     */
+    /*public function test_post_logout() 
+    {
+        $token = $this->test_post_login('albert', '123');
+        if(!empty($token)) 
+        {
+            $curl   = Request::forge('http://localhost/test-blog/user_logout', 'curl');
+            $curl->set_method('post');
+            $token_info = array(
+                'token' => $token
+            );
+            $curl->set_params($token_info);
+            $curl->execute();
+
+            // Get API Response
+            $response       = $curl->response();
+            // Convert json response to array
+            $arr_msg        = json_decode($response->body(), true);
+            // Get API Response code
+            $status_actual  = $arr_msg['message']['code'];
+            $status_expected= 200;
+            $this->assertEquals($status_expected, $status_actual);
+        }
+    }*/
 }
 

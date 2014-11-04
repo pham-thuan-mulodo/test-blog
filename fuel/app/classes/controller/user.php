@@ -77,7 +77,7 @@ class Controller_User extends Controller_Rest
         if (Input::method() == 'POST') 
         {
             $token = '';
-            if (Auth::login($username, $pass) || empty($token)) 
+            if (Auth::login($username, $pass) && empty($token)) 
             {
                 // create token
                 $token  = Auth::get('login_hash');
