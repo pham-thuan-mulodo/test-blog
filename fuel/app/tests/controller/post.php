@@ -2,7 +2,11 @@
 use Fuel\Core\TestCase;
 use Fuel\Core\Request;
 /**
+ * Test_Controller_Post Class contains all test methods for methods in class Controller_Post
+ * 
  * @group Post
+ * @package Fuel\Core\TestCase
+ * @var Test_Controller_Post Object contains methods to test methods in class Controller_Post
  */
 class Test_Controller_Post extends TestCase 
 {
@@ -19,6 +23,11 @@ class Test_Controller_Post extends TestCase
         unset($this->user);
     }
     
+    /**
+     * create_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function create_provider() 
     {
         return array(
@@ -30,6 +39,7 @@ class Test_Controller_Post extends TestCase
     }
     
     /**
+     * test_post_create Test post_create method in post controller
      * 
      * @dataProvider create_provider
      * @param string $title Title of post to test
@@ -62,6 +72,11 @@ class Test_Controller_Post extends TestCase
         }
     }*/
     
+    /**
+     * edit_post_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function edit_post_provider() 
     {
         return array(
@@ -72,6 +87,7 @@ class Test_Controller_Post extends TestCase
     }
     
     /**
+     * test_put_edit Test put_edit method in post controller
      * 
      * @dataProvider edit_post_provider
      * @param int $post_id ID of post to test
@@ -106,6 +122,11 @@ class Test_Controller_Post extends TestCase
         }
     }
     
+    /**
+     * delete_post_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function delete_post_provider() 
     {
         return array(
@@ -116,6 +137,7 @@ class Test_Controller_Post extends TestCase
     }
     
     /**
+     * test_delete_delete Test delete_delete method in post controller
      * 
      * @dataProvider delete_post_provider
      * @param int $post_id ID of post to test
@@ -144,6 +166,11 @@ class Test_Controller_Post extends TestCase
         }
     }
     
+    /**
+     * delete_post_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function get_post_provider() 
     {
         return array(
@@ -152,6 +179,7 @@ class Test_Controller_Post extends TestCase
     }
     
     /**
+     * test_get_show Test get_show method in post controller
      * 
      * @dataProvider get_post_provider
      * @param int $author_id ID of user to test

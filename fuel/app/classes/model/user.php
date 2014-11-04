@@ -35,10 +35,10 @@ class User extends \Orm\Model
         {
             $user   = User::forge($data);
             // Check Existing Account
-            $entry  = $user->find('all', array(
+            $entry  = User::find('all', array(
                 'where' => array(
-                    array('email', $data['email']),
-                    array('username', $data['username'])
+                    array('email', '=', $data['email']),
+                    array('username', '=', $data['username'])
                 )
             ));
             if (count($entry) == 0) 
@@ -72,7 +72,7 @@ class User extends \Orm\Model
     {
         try {
             $user   = User::forge();
-            $entry  = $user->find('all', array(
+            $entry  = User::find('all', array(
                 'where' => array(
                     array('id', $user_id)
                 )

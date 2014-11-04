@@ -3,7 +3,11 @@ use Fuel\Core\TestCase;
 use Fuel\Core\Request;
 
 /**
+ * Test_Controller_Comment Class contains all test methods for methods in class Controller_Comment
+ * 
  * @group Comment
+ * @package Fuel\Core\TestCase
+ * @var Test_Controller_Comment Object contains methods to test methods in class Controller_Comment
  */
 class Test_Controller_Comment extends TestCase 
 {
@@ -21,6 +25,11 @@ class Test_Controller_Comment extends TestCase
         unset($this->user);
     }
     
+    /**
+     * add_comment_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function add_comment_provider() 
     {
         return array(
@@ -32,6 +41,7 @@ class Test_Controller_Comment extends TestCase
     }
     
     /**
+     * test_post_add Test post_add method in comment controller
      * 
      * @dataProvider add_comment_provider
      * @param int $post_id ID of post to test
@@ -62,6 +72,11 @@ class Test_Controller_Comment extends TestCase
         }
     }
     
+    /**
+     * edit_comment_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function edit_comment_provider() 
     {
         return array(
@@ -71,6 +86,7 @@ class Test_Controller_Comment extends TestCase
     }
     
     /**
+     * test_put_edit test put_edit method in comment controller
      * 
      * @dataProvider edit_comment_provider
      * @param int $comm_id ID of comment to test
@@ -101,6 +117,11 @@ class Test_Controller_Comment extends TestCase
         }
     }
     
+    /**
+     * delete_comm_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function delete_comm_provider() 
     {
         return array(
@@ -110,6 +131,7 @@ class Test_Controller_Comment extends TestCase
     }
     
     /**
+     * test_delete_remove test delete_remove method in comment controller
      * 
      * @dataProvider delete_comm_provider
      * @param int $comm_id ID of comment to test
@@ -138,6 +160,11 @@ class Test_Controller_Comment extends TestCase
         }
     }
     
+    /**
+     * show_comm_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function show_comm_provider() 
     {
         return array(
@@ -146,6 +173,7 @@ class Test_Controller_Comment extends TestCase
     }
     
     /**
+     * test_get_show test get_show method in comment controller
      * 
      * @dataProvider show_comm_provider
      * @param int $post_id ID of post to test

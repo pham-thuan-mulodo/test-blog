@@ -2,9 +2,12 @@
 use Fuel\Core\TestCase;
 use Fuel\Core\Request;
 /**
+ * Test_Controller_User Class contains all test methods for methods in class Controller_User
+ * 
  * @group User
+ * @package Fuel\Core\TestCase
+ * @var Test_Controller_User Object contains methods to test methods in class Controller_User
  */
-
 class Test_Controller_User extends TestCase 
 {
     public function setUp() 
@@ -17,6 +20,11 @@ class Test_Controller_User extends TestCase
         //unset($this->user_c);
     }
     
+    /**
+     * login_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function login_provider() 
     {
         return array(
@@ -68,14 +76,14 @@ class Test_Controller_User extends TestCase
      * @param string $password Password of user to test
      * @param string $username Username of user to test
      */
-    /*public function test_post_register() 
+    public function test_post_register() 
     {
         $curl   = Request::forge('http://localhost/test-blog/user_register', 'curl');
         $curl->set_method('post');
         $user_info  = array(
-            'email' => 'misa@mulodo.com',
+            'email' => 'suzuki@mulodo.com',
             'password' => '123',
-            'username' => 'misa'
+            'username' => 'suzuki'
         );
         $curl->set_params($user_info);
         $curl->execute();
@@ -86,10 +94,15 @@ class Test_Controller_User extends TestCase
         $arr_msg        = json_decode($response, true);
         // Get API Response code
         $status_actual  = $arr_msg['message']['code'];
-        $status_expected= 200;
+        $status_expected= 402;
         $this->assertEquals($status_expected, $status_actual);
-    }*/
+    }
     
+    /**
+     * edit_provider
+     * 
+     * @return mixed Set of data to test
+     */
     public function edit_provider() 
     {
         return array(
@@ -99,8 +112,13 @@ class Test_Controller_User extends TestCase
     }
     
     /**
-     * @dataProvider edit_provider
+     * Test put_edit method in user controller
      * 
+     * @dataProvider edit_provider
+     * @param int $user_id ID of user to test
+     * @param string $email Email of user to test
+     * @param string $password Password of user to test
+     * @param string $profile Profile of user to test  
      */
     public function test_put_edit($user_id, $email, $password, $profile) 
     {
@@ -131,9 +149,9 @@ class Test_Controller_User extends TestCase
     }
     
     /**
-     * 
+     * Test post_logout method in user controller
      */
-    /*public function test_post_logout() 
+    public function test_post_logout() 
     {
         $token = $this->test_post_login('albert', '123');
         if(!empty($token)) 
@@ -155,6 +173,6 @@ class Test_Controller_User extends TestCase
             $status_expected= 200;
             $this->assertEquals($status_expected, $status_actual);
         }
-    }*/
+    }
 }
 
