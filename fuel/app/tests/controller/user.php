@@ -81,9 +81,9 @@ class Test_Controller_User extends TestCase
         $curl   = Request::forge('http://localhost/test-blog/user_register', 'curl');
         $curl->set_method('post');
         $user_info  = array(
-            'email' => 'suzuki@mulodo.com',
+            'email' => 'maki@mulodo.com',
             'password' => '123',
-            'username' => 'suzuki'
+            'username' => 'maki'
         );
         $curl->set_params($user_info);
         $curl->execute();
