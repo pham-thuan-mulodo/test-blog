@@ -44,9 +44,12 @@ class User extends \Orm\Model
             if (count($entry) == 0) 
             {
                 $user->save();
+                // get id of user inserted currently
+                $user_id = $user->id;
+           		$user_info			= $user->get_user_info($user_id);
+           		$result['data']		= $user_info['data'];
                 $result['status']   = 200;
                 $result['text']     = 'Register Successfully';
-                $result['data']     = null;
             } 
             else 
             {

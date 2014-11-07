@@ -51,9 +51,18 @@ class Comment extends \Orm\Model
             if(count($entry) == 0) 
             {
                 $comment->save();
+                $comm_id = $comment->id;
+                $comm_info = $comment->get_comment($comm_id);
+                $result['data']		= array(
+                		'id' => $comm_info['id'],
+                		'content' => $comm_info['content'],
+                		'author_id' => $comm_info['author_id'],
+                		'post_id' => $comm_info['post_id'],
+                		'created_gmt' => gmdate('Y-m-d H:i:s', $comm_info['created_gmt']),
+                		'modified_gmt' => gmdate('Y-m-d H:i:s', $comm_info['modified_gmt'])
+                );
                 $result['status'] = 200;
-                $result['text'] = '';
-                $result['data'] = null;
+                $result['text'] = 'Comment was added successfully';
             }
             else 
             {

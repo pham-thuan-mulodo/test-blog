@@ -96,7 +96,7 @@ class Controller_Post extends Controller_Rest
                         'code' => $result['status'],
                         'text' => $result['text']
                     ),
-                    'data' => null
+                    'data' => $result['data']
                 ));
             } 
             else 
@@ -216,7 +216,7 @@ class Controller_Post extends Controller_Rest
             }
 
             // Get post
-            $post        = new Post();
+            $post        	= new Post();
             $post_info      = $post->get_post_info($post_id);
             // Get input
             $title       = Security::strip_tags(Security::xss_clean(Input::put('title')));
@@ -264,7 +264,7 @@ class Controller_Post extends Controller_Rest
                     return $this->response(array(
                         'message' => array(
                             'code' => 200,
-                            'text' => ''
+                            'text' => 'Got post successfully'
                         ),
                         'data' => $data
                     ));
@@ -350,7 +350,7 @@ class Controller_Post extends Controller_Rest
                 return $this->response(array(
                     'message' => array(
                         'code' => 200,
-                        'text' => ''
+                        'text' => 'Got post of specific user successfully'
                     ),
                     'data' => $data
                 ));

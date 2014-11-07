@@ -63,7 +63,7 @@ class Controller_User extends Controller_Rest
             return $this->response(array(
                 'message' => array(
                     'code' => 200,
-                    'text' => ''
+                    'text' => 'You had logged'
                 ),
                 'token'   => Session::get('token'),
                 'data'    => null
@@ -90,7 +90,7 @@ class Controller_User extends Controller_Rest
                 return $this->response(array(
                     'message' => array(
                         'code' => 200,
-                        'text' => ''
+                        'text' => 'Login successfully'
                     ),
                     'token'   => $token,
                     'data'    => null

@@ -50,9 +50,19 @@ class Post extends \Orm\Model
             if(count($entry) == 0) 
             {
                 $post->save();
+                $post_id 			= $post->id;
+                $post_info			= $post->get_post_info($post_id);
+                $result['data']		= array(
+                		'id' => $post_info['id'],
+                		'title' => $post_info['title'],
+                		'outline' => $post_info['outline'],
+                		'content' => $post_info['content'],
+                		'author_id' => $post_info['author_id'],
+                		'created_gmt' => gmdate('Y-m-d H:i:s', $post_info['created_gmt']),
+                		'modified_gmt' => gmdate('Y-m-d H:i:s', $post_info['modified_gmt'])
+                );
                 $result['status']   = 200;
-                $result['text']     = '';
-                $result['data']     = null;
+                $result['text']     = 'Created post successfully';
             }
             else 
             {

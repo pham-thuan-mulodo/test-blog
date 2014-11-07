@@ -98,7 +98,7 @@ class Controller_Comment extends Controller_Rest
                             'code' => $result['status'],
                             'text' => $result['text']
                         ),
-                        'data' => null
+                        'data' => $result['data']
                     ));
                 } 
                 else 
@@ -249,7 +249,7 @@ class Controller_Comment extends Controller_Rest
                 return $this->response(array(
                     'message' => array(
                         'code' => 200,
-                        'text' => ''
+                        'text' => 'Get comments of specified post successfully'
                     ),
                     'data' => $data
                 ));
@@ -357,7 +357,7 @@ class Controller_Comment extends Controller_Rest
                     return $this->response(array(
                         'message' => array(
                             'code' => 200,
-                            'text' => ''
+                            'text' => 'Get post successfully'
                         ),
                         'data' => $data
                     ));
