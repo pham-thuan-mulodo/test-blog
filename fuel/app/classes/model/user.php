@@ -97,7 +97,7 @@ class User extends \Orm\Model
             else 
             {
                 $result['status']   = 200;
-                $result['text']     = '';
+                $result['text']     = 'Get user information successfully';
                 foreach ($entry as $item) 
                 {
                     $result['data'] = $item;

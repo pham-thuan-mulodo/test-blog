@@ -253,15 +253,14 @@ class Controller_User extends Controller_Rest
             $pass       = $user_info['data']['password'];
             // Get inputs
             $email      = Input::put('email');
-            $newPass    = Input::put('password');
             $profile    = Input::put('profile_fields');
             $time       = time();
             // check editted account, then update to dabase and return data edited as json
-            if (Input::put('id') && ((!empty($email) && !is_bool(filter_var($email, FILTER_VALIDATE_EMAIL))) || !empty($newPass) || !empty($profile))) 
+            if (Input::put('id') && ((!empty($email) && !is_bool(filter_var($email, FILTER_VALIDATE_EMAIL)) && $email !== $user_info['data']['email']) || (!empty($profile) && $profile !== $user_info['data']['profile_fields']))) 
             {
                 $data   = array(
                     'email' => (empty($email)) ? $user_info['data']['email'] : $email,
-                    'password' => (empty($newPass)) ? $pass : Auth::instance()->hash_password($newPass),
+                    'password' => $pass,
                     'username' => $user_info['data']['username'],
                     'last_login' => $user_info['data']['last_login'],
                     'group' => $user_info['data']['group'],
