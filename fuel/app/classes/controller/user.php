@@ -8,6 +8,7 @@ use Fuel\Core\Security;
 use Auth\Auth;
 use Fuel\Core\Log;
 use Fuel\Core\Cookie;
+use Fuel\Core\Validation;
 
 /**
  * Controller_User Controller class for user endpoint. This class contains all API methods related user.
@@ -52,7 +53,7 @@ class Controller_User extends Controller_Rest
     /**
      * Do login action for user 
      *
-     * @link http://localhost/test-blog/user Link to post_login method
+     * @link http://localhost/test-blog/user
      * @return mixed[] Content of API response
      */
     public function post_login() 
@@ -113,7 +114,7 @@ class Controller_User extends Controller_Rest
     /**
      * Do logout action for user
      * 
-     * @link http://localhost/test-blog/user_logout Link to post_logout method
+     * @link http://localhost/test-blog/user_logout
      * @return mixed[] Content of API response
      */
     public function post_logout() 
@@ -312,5 +313,110 @@ class Controller_User extends Controller_Rest
                 'data' => null
             ));
         }
+    }
+    
+    public function put_change_password() 
+    {
+    	$token      = Input::put('token');
+    	$user = new User();
+    	$user_info = $user->check_token_exist($token);
+    	$token_db = '';
+    	foreach($user_info as $item)
+    	{
+    		$token_db = $item['login_hash'];
+    	}
+    	if(!empty($token) && $token === $token_db) 
+    	{
+    		$msg = $this->validation();
+    		if($msg == 'Succeed') {
+    			$id 			= (int) Input::put('user_id');
+    			$curr_pass		= Auth::instance()->hash_password(Input::put('old_pass'));
+    			$new_pass		= Auth::instance()->hash_password(Input::put('new_pass'));
+    			$confirm_pass	= Auth::instance()->hash_password(Input::put('confirm_pass'));
+    			if(empty($id) || $id <= 0) {
+    				return $this->response(array(
+    						'message' => array(
+    								'code' => 401,
+    								'text' => 'Invalid Input'
+    						),
+    						'data' => null
+    				));
+    			}
+    			$user = new User();
+    			$user_info = $user->is_existed_pass($id, $curr_pass);
+    			if(count($user_info)) {
+    				if($curr_pass !== $new_pass && $new_pass === $confirm_pass) {
+    					// Update new password
+    					$user->update_pass($id, $new_pass);
+    					$data = $user->get_user_info($id);
+    					return $this->response(array(
+    							'message' => array(
+    									'code' => 11301,
+    									'text' => 'Password changed'
+    							),
+    							'data' => $data['data']
+    					));
+    				}
+    				else
+    				{
+    					return $this->response(array(
+    							'message' => array(
+    									'code' => 11000,
+    									'text' => 'New password must be matched with confirm password'
+    							),
+    							'data' => null
+    					));
+    				}
+    			}
+    			else
+    			{
+    				return $this->response(array(
+    						'message' => array(
+    								'code' => 11002,
+    								'text' => 'Old password doesn\'t exist'
+    						),
+    						'data' => null
+    				));
+    			}
+    		}
+    		else
+    		{
+    			echo $msg;
+    		}	
+    	}
+    	else
+    	{
+    		return $this->response(array(
+    				'message' => array(
+    						'code' => 10303,
+    						'text' => 'Permission denied'
+    				),
+    				'data' => null		
+    		));
+    	}
+    }
+    
+    protected function validation() 
+    {
+    	$val = Validation::forge('testvalidation');
+    	$val->add_field('old_pass', 'Current Password', 'required');
+    	$val->add_field('new_pass', 'New Password', 'required|min_length[5]|max_length[20]');
+    	$val->add_field('confirm_pass', 'Confirm Password', 'required|min_length[5]|max_length[20]');
+    	
+//     	$val->set_message('required', 'Current, new and confirm password is required');
+//     	$val->set_message('min_length[5]', 'Password length was less than 5 characters');
+//     	$val->set_message('max_length[20]', 'Password length exceeded 20 characters');
+    	
+    	if(!$val->run(array())) 
+    	{
+    		foreach($val->error_message() as $field => $message) {
+    			return $message;
+    		}
+    	}
+    	else 
+    	{
+    		$message = 'Succeed';
+    		return $message;
+    	}
     }
 }

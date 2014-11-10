@@ -177,4 +177,31 @@ class User extends \Orm\Model
             Log::error($ex->getMessage());
         }
     }
+    
+    public function is_existed_pass($user_id, $curr_pass) {
+    	try
+    	{
+    		$entry	= User::find('all', array(
+    			'where' => array(
+    				array('id', '=', $user_id),
+    				array('password', '=', $curr_pass)
+    			)	
+    		));
+    		return $entry;
+    	}
+    	catch(Exception $ex) {
+    		Log::error($ex->getMessage());
+    	}
+    }
+    public function update_pass($user_id, $new_pass) {
+    	try
+    	{
+    		$user = User::find($user_id);
+    		$user->password = $new_pass;
+    		$user->save();
+    	}
+    	catch(Exception $ex) {
+    		echo $ex->getMessage();
+    	}
+    }
 }

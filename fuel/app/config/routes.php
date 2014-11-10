@@ -8,6 +8,7 @@ return array(
         'user_logout' => 'user/logout',
         'user_register' => 'user/register',
         'user_edit' => 'user/edit',
+		'user/pass' => 'user/change_password',
 //      Config router for post controller
         'post' => 'post/create',
         'post_edit' => 'post/edit',
