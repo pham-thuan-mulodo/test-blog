@@ -1,6 +1,7 @@
 <?php
 use Fuel\Core\TestCase;
 use Fuel\Core\Request;
+use Fuel\Core\DB;
 /**
  * Test_Controller_User Class contains all test methods for methods in class Controller_User
  * 
@@ -10,6 +11,18 @@ use Fuel\Core\Request;
  */
 class Test_Controller_User extends TestCase 
 {
+	private $_user_id;
+	
+	public function set_user_id($user_id) 
+	{
+		$this->_user_id = $user_id;
+	}
+	
+	public function get_user_id() 
+	{
+		return $this->_user_id;
+	}
+	
     public function setUp() 
     {
         //$this->user_c = new Controller_User();
@@ -18,6 +31,8 @@ class Test_Controller_User extends TestCase
     public function tearDown() 
     {
         //unset($this->user_c);
+        $this->delete_user_test($this->get_user_id());
+        unset($this->_user_id);
     }
     
     /**
@@ -34,7 +49,7 @@ class Test_Controller_User extends TestCase
             array('utest2', '123'),
             array('anna231', '123'),
             array('example57', '123'),
-            array('firstlove123', '123'),
+            array('firstlove123', '123456'),
             array('shinichi', '123'),
             array('tuan_pham123', '123'),
             array('loc', '123'),
@@ -81,9 +96,9 @@ class Test_Controller_User extends TestCase
         $curl   = Request::forge('http://localhost/test-blog/user_register', 'curl');
         $curl->set_method('post');
         $user_info  = array(
-            'email' => 'maki@mulodo.com',
-            'password' => '123',
-            'username' => 'maki'
+            'email' => 'alex@mulodo.com',
+            'password' => '123456',
+            'username' => 'alex'
         );
         $curl->set_params($user_info);
         $curl->execute();
@@ -92,9 +107,10 @@ class Test_Controller_User extends TestCase
         $response       = $curl->response();
         // Convert json response to array
         $arr_msg        = json_decode($response, true);
+        $this->set_user_id($arr_msg['data']['id']);
         // Get API Response code
         $status_actual  = $arr_msg['message']['code'];
-        $status_expected= 402;
+        $status_expected= 200;
         $this->assertEquals($status_expected, $status_actual);
     }
     
@@ -173,6 +189,13 @@ class Test_Controller_User extends TestCase
             $status_expected= 200;
             $this->assertEquals($status_expected, $status_actual);
         }
+    }
+    
+    public function delete_user_test($user_id) 
+    {
+    	$query = DB::query('DELETE FROM user WHERE id = :user_id');
+    	$query->bind('user_id', $user_id);
+    	$query->execute();
     }
 }
 
