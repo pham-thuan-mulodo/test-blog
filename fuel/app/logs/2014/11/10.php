@@ -1538,3 +1538,28 @@ INFO - 2014-11-10 11:49:23 --> Fuel\Core\Request::execute - Called
 INFO - 2014-11-10 11:49:23 --> Fuel\Core\Request::execute - Setting main Request
 ERROR - 2014-11-10 11:49:23 --> You are not login yet.
 INFO - 2014-11-10 11:49:23 --> User21 logged out. Token of user21 was deleted in database and session
+WARNING - 2014-11-10 11:53:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-10 11:53:38 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user_logout"
+INFO - 2014-11-10 11:53:38 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-10 11:53:38 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-11-10 11:53:38 --> You are not login yet.
+DEBUG - 2014-11-10 11:53:38 --> You cannot logout because invalid token
+WARNING - 2014-11-10 11:54:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-10 11:54:06 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-11-10 11:54:06 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-10 11:54:06 --> Fuel\Core\Request::execute - Setting main Request
+ERROR - 2014-11-10 11:54:06 --> You are not login yet.
+DEBUG - 2014-11-10 11:54:06 --> Username inputted now is "albert"
+DEBUG - 2014-11-10 11:54:06 --> Password inputted now is "K0a6gamZ1WRAMveKC9c3rC5CirxEKonoDQUDYWkLPbE="
+WARNING - 2014-11-10 11:54:08 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-10 11:54:08 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user"
+INFO - 2014-11-10 11:54:08 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-10 11:54:08 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-11-10 11:54:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-10 11:54:22 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user/pass"
+INFO - 2014-11-10 11:54:22 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-10 11:54:22 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-11-10 11:54:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-10 11:54:27 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "user/pass"
+INFO - 2014-11-10 11:54:27 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-10 11:54:27 --> Fuel\Core\Request::execute - Setting main Request
