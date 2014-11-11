@@ -11,5 +11,6 @@ return array(
     'Monolog' => array($vendorDir . '/monolog/monolog/src'),
     'Michelf' => array($vendorDir . '/michelf/php-markdown'),
     'Fuel\\Upload' => array($vendorDir . '/fuelphp/upload/src'),
+    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),
 );
