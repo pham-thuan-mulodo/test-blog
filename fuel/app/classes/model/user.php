@@ -3,6 +3,7 @@
 namespace Model;
 use Fuel\Core\Log;
 use Exception;
+use Fuel\Core\Validation;
 /**
  * User
  * 
@@ -202,6 +203,28 @@ class User extends \Orm\Model
     	}
     	catch(Exception $ex) {
     		echo $ex->getMessage();
+    	}
+    }
+    public static function validate_input() {
+    	$val = Validation::forge('user');
+    	$val->add_field('old_pass', 'Current Password', 'required');
+    	$val->add_field('new_pass', 'New Password', 'required|min_length[5]|max_length[20]');
+    	$val->add_field('confirm_pass', 'Confirm Password', 'required|min_length[5]|max_length[20]');
+    	 
+    	//     	$val->set_message('required', 'Current, new and confirm password is required');
+    	//     	$val->set_message('min_length[5]', 'Password length was less than 5 characters');
+    	//     	$val->set_message('max_length[20]', 'Password length exceeded 20 characters');
+    	 
+    	if(!$val->run(array()))
+    	{
+    		foreach($val->error_message() as $field => $message) {
+    			return $message;
+    		}
+    	}
+    	else
+    	{
+    		$message = 'Succeed';
+    		return $message;
     	}
     }
 }

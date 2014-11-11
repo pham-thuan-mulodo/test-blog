@@ -327,7 +327,7 @@ class Controller_User extends Controller_Rest
     	}
     	if(!empty($token) && $token === $token_db) 
     	{
-    		$msg = $this->validation();
+    		$msg = User::validate_input();
     		if($msg == 'Succeed') {
     			$id 			= (int) Input::put('user_id');
     			$curr_pass		= Auth::instance()->hash_password(Input::put('old_pass'));
@@ -396,7 +396,7 @@ class Controller_User extends Controller_Rest
     	}
     }
     
-    protected function validation() 
+    /*protected function validation() 
     {
     	$val = Validation::forge('testvalidation');
     	$val->add_field('old_pass', 'Current Password', 'required');
@@ -418,5 +418,5 @@ class Controller_User extends Controller_Rest
     		$message = 'Succeed';
     		return $message;
     	}
-    }
+    }*/
 }
