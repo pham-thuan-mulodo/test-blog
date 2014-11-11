@@ -1,0 +1,4 @@
+<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
+
+WARNING - 2014-11-11 10:12:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2014-11-11 10:12:43 --> Compile Error - require_once(): Failed opening required 'PHP/CodeCoverage/Autoload.php' (include_path='C:\wamp\www\test-blog\fuel\vendor/phpunit/php-text-template;C:\wamp\www\test-blog\fuel\vendor/phpunit/php-timer;C:\wamp\www\test-blog\fuel\vendor/phpunit/php-token-stream;C:\wamp\www\test-blog\fuel\vendor/phpunit/php-file-iterator;C:\wamp\www\test-blog\fuel\vendor/phpunit/phpunit-mock-objects;C:\wamp\www\test-blog\fuel\vendor/phpunit/php-code-coverage;C:\wamp\www\test-blog\fuel\vendor/phpunit/phpunit;C:\wamp\www\test-blog\fuel\vendor/symfony/yaml;.;C:\wamp\bin\php\php5.5.12\pear') in C:\wamp\www\test-blog\fuel\vendor\phpunit\phpunit\PHPUnit\Autoload.php on line 46
