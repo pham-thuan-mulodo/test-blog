@@ -151,7 +151,8 @@ class User extends \Orm\Model
         }
     }
     
-    public function get_token_user($user_id) {
+    public function get_token_user($user_id) 
+    {
         try
         {
             $entry = User::find($user_id);
@@ -163,7 +164,8 @@ class User extends \Orm\Model
         }
     }
     
-    public function check_token_exist($token) {
+    public function check_token_exist($token) 
+    {
         try 
         {
             $entry  = User::find('all', array(
@@ -179,7 +181,8 @@ class User extends \Orm\Model
         }
     }
     
-    public function is_existed_pass($user_id, $curr_pass) {
+    public function is_existed_pass($user_id, $curr_pass) 
+    {
     	try
     	{
     		$entry	= User::find('all', array(
@@ -194,7 +197,8 @@ class User extends \Orm\Model
     		Log::error($ex->getMessage());
     	}
     }
-    public function update_pass($user_id, $new_pass) {
+    public function update_pass($user_id, $new_pass) 
+    {
     	try
     	{
     		$user = User::find($user_id);
@@ -205,19 +209,21 @@ class User extends \Orm\Model
     		echo $ex->getMessage();
     	}
     }
-    public static function validate_input() {
+    public static function validate_input() 
+    {
     	$val = Validation::forge('user');
     	$val->add_field('old_pass', 'Current Password', 'required');
     	$val->add_field('new_pass', 'New Password', 'required|min_length[5]|max_length[20]');
     	$val->add_field('confirm_pass', 'Confirm Password', 'required|min_length[5]|max_length[20]');
     	 
-    	//     	$val->set_message('required', 'Current, new and confirm password is required');
-    	//     	$val->set_message('min_length[5]', 'Password length was less than 5 characters');
-    	//     	$val->set_message('max_length[20]', 'Password length exceeded 20 characters');
+    	$val->set_message('required', 'Current, new and confirm password is required');
+    	$val->set_message('min_length', 'Password length was less than 5 characters');
+    	$val->set_message('max_length', 'Password length exceeded 20 characters');
     	 
     	if(!$val->run(array()))
     	{
-    		foreach($val->error_message() as $field => $message) {
+    		foreach($val->error_message() as $field => $message) 
+    		{
     			return $message;
     		}
     	}

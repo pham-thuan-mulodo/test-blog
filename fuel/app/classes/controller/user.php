@@ -357,6 +357,16 @@ class Controller_User extends Controller_Rest
     							'data' => $data['data']
     					));
     				}
+    				else if ($curr_pass === $new_pass && $new_pass === $confirm_pass)
+    				{
+    					return $this->response(array(
+    							'message' => array(
+    									'code' => 11005,
+    									'text' => 'New password must be different from old password'
+    							),
+    							'data' => null
+    					));
+    				}
     				else
     				{
     					return $this->response(array(
