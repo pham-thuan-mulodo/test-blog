@@ -1,7 +1,5 @@
 <?php
-
 use Fuel\Core\Controller_Rest;
-
 
 class Controller_Sample extends Controller_Rest {
 	public function post_users() {

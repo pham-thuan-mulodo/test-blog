@@ -37,3 +37,15 @@ WARNING - 2014-11-14 11:33:46 --> Fuel\Core\Fuel::init - The configured locale e
 INFO - 2014-11-14 11:33:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "sample/users"
 INFO - 2014-11-14 11:33:46 --> Fuel\Core\Request::execute - Called
 INFO - 2014-11-14 11:33:46 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-11-14 11:36:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-14 11:36:14 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "sample/users"
+INFO - 2014-11-14 11:36:14 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-14 11:36:14 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-11-14 11:36:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-14 11:36:15 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "sample/users"
+INFO - 2014-11-14 11:36:15 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-14 11:36:15 --> Fuel\Core\Request::execute - Setting main Request
+WARNING - 2014-11-14 11:36:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+INFO - 2014-11-14 11:36:15 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "sample/users"
+INFO - 2014-11-14 11:36:15 --> Fuel\Core\Request::execute - Called
+INFO - 2014-11-14 11:36:15 --> Fuel\Core\Request::execute - Setting main Request
