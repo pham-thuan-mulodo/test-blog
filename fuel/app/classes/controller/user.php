@@ -17,7 +17,7 @@ use Fuel\Core\Validation;
  * @package Fuel\Core\Controller_Rest
  * @var Controller_User Class contains methods to resolve transactions of user
  */
-class Controller_User extends Controller_Rest 
+class Controller_User extends Controller_Common 
 {
     /**
      *
