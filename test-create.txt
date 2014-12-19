@@ -1,2 +1,3 @@
 Sample text
 I'm testing my blog. Please wait!
+I'm master branch
