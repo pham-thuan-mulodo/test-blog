@@ -1,5 +1,12 @@
 Sample text
 I'm testing my blog. Please wait!
+<<<<<<< HEAD
 I'm master branch
 I'm test branch
 Master branch
+=======
+I'm test branch
+
+
+Test branch
+>>>>>>> test
